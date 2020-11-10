@@ -78,3 +78,252 @@ display and reset the canvas drawing dimension
  //increasing the width and height
  canvas.width=200;
  canvas.height=300;
+
+
+CAT 1 Revision Questions
+---------------------------
+Computer graphics is Ubiquitous. What what do you understand by his statement?
+Select one:
+a. Computer graphics encompasses anything achieved visually on computers and it is applicable in a few or all disciplines in modern day life
+b. Computer graphics encompasses anything achieved visually on computers and it is applicable in quite a number of areas in modern day life
+c. Computer graphics encompasses anything achieved visually on computers and it is applicable in almost all disciplines in modern day life
+d. Computer graphics encompasses a number of computing areas achieved visually on computers and in many disciplines in modern day life 
+The correct answer is: Computer graphics encompasses anything achieved visually on computers and it is applicable in almost all disciplines in modern day life
+
+
+Graphics pipeline consist of four stages, namely Modeling stage, Application Stage,Geometry Stage and Rasterization Stage. True/False?
+Select one:
+a. false
+b. true 
+The correct answer is: false
+
+
+The statements below concerns an identity matrix. Which one is incorrect?
+Select one:
+a. The identity matrix does not affect the elements of any other matrix it is multiplied with
+b. The identity matrix has zeroes everywhere except the leading diagonal which is set to 1 
+c. The identity matrix is obtained by multiplying any matrix with its corresponding inverse
+d. It is used heavily in transforming graphics objects.
+The correct answer is: It is used heavily in transforming graphics objects.
+
+You assert that Graphics pipeline consist of four stages, namely Modeling stage, Application Stage,Geometry Stage and Rasterization Stage. Which is the correct sequence of processing of these stages
+Select one:
+A. Modeling,Application,Geometry,Rasterization 
+B. None of these
+C. Apploication,Modeling,Geometry,Rasterization
+D. Modeling,Geometry,Application,Rasterization
+The correct answer is: None of these
+
+Which stage in the graphics pipeline do much of the graphics processing?
+The correct answer is: Geometry
+
+Which stage of the graphics pipeline will benefit from a faster computer CPU?
+The correct answer is: Application
+
+The statements below describe characteristics of display systems. Which one is incorrect?
+Select one:
+a. Has a frame buffer which is a memory where the color values of the pixels are stored
+b. Has depth (or precision) which is the number of color-bits per pixel 
+c. Contains the GPU which writes the color value into the frame buffer among others
+d. Contains the pipeline, which refers to a series of processing stages before display
+e. Has refresh rate which the rate at which the display refreshes its screen per second
+f. Has resolution which is the the number of rows by columns of the rectangular display grid
+The correct answer is: Contains the pipeline, which refers to a series of processing stages before display
+
+
+
+
+Each of the stages gets input data and gives an output. In which form is the input received by the rasterization engine?
+Select one:
+A. Meddelling Data 
+B. Vector
+C. Jaggies
+D. Raster
+The correct answer is: Vector
+
+
+What is aliasing as applied in computer graphics
+Select one:
+a. This distortion artifacts produced when representing a high-resolution signal at a lower resolution
+b. This distortion artifacts produced when representing a low-resolution signal at a higher resolution 
+c. This distortion artifacts produced when representing a high-resolution signal at a high resolution
+d. The task of removing aliases in an image and making it photorealistic
+The correct answer is: This distortion artifacts produced when representing a low-resolution signal at a higher resolution
+
+
+What is opacity in computer graphics and which property is used to set it?
+Select one:
+a. Opacity is a measure of the transparency/Opaqueness of an image. Its value ranges from 0 to 1 and can be set using the globalOpacity property.
+b. Opacity is a measure of the transparency/Opaqueness of an image. It has a value ranging from 0 to 100 and can be set using the globalAlpha property. 
+c. Opacity is a measure of the transparency/Opaqueness of an image. It has a value ranging from 0 to 1 and can be set using the globalAlpha property.
+d. Opacity is a measure of the transparency/Opaqueness of an image. It has a value of either 0 or 1 and can be set using the globalOpacity property.
+The correct answer is: Opacity is a measure of the transparency/Opaqueness of an image. It has a value ranging from 0 to 1 and can be set using the globalAlpha property.
+
+
+
+What is Shading in computer graphics?
+Select one:
+a. Shading refers to the process of altering the color of an object in the 3D scene using phong techniques
+b. Shading refers to the process of altering the color of an object in the 3D scene using flat shading methods 
+c. Refers to the process of altering the color of an object in the 3D scene, based on its angle to lights and its distance from lights source to create a photorealistic effect
+d. Shading refers to the process of altering the color of an object by use of the shading tool in graphic application
+The correct answer is: Refers to the process of altering the color of an object in the 3D scene, based on its angle to lights and its distance from lights source to create a photorealistic effect
+
+
+What is specular highlight as used in computer graphics?
+Select one:
+a. It is the bright spot of light that appears on shiny objects when illuminated light is perfectly reflected in a mirror-like way from the light source to the viewer Correct
+b. A bright spot on an object obtained by use of flat shading and lighting techniques .
+c. A bright spot on an object obtained by use of Goround shading and lighting techniques .
+d. A bright spot on an object obtained by use of diffuse reflection and the law of reflection .
+The correct answer is: It is the bright spot of light that appears on shiny objects when illuminated light is perfectly reflected in a mirror-like way from the light source to the viewer
+
+
+Texture mapping is one of the important image processing in computer graphics. What is its significance?
+Select one:
+a. It enables the use of a 3D image file that can be applied to the surface of a 3D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency. Incorrect
+b. This is the use of a 3D image file that can be applied to the surface of a2D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
+c. It is used in the  task of combining two or more images to create a more complicated image
+d. It enables the use of a 2D image file that can be applied to the surface of a 3D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
+The correct answer is: It enables the use of a 2D image file that can be applied to the surface of a 3D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
+
+
+What is the result of cross product of any two vectors?
+Select one:
+a. It is a scaler product that is the magnitude of the two vectors Incorrect
+b. It is a vector product which is a projection of one of the vector to the other
+c. It is a vector parallel to the two vectors.
+d. It is a vector othoganl to the two vectors.
+The correct answer is: It is a vector othoganl to the two vectors.
+
+
+
+
+Which graphic processing task that benefits from vector cross product?
+The correct answer is: Shading
+
+
+Which of the pipe line stage requires use of matrices?
+Select one:
+a. Geometry Stage Correct
+b. Transformation stage
+c. Application Stage,
+d. Rasterization Stage.
+The correct answer is: Geometry Stage
+
+
+Which of the pipe line stage requires use of vectors?
+Select one:
+a. Application Stage,
+b. Geometry Stage
+c. Transformation stage 
+d. Rasterization Stage.
+The correct answer is: Geometry Stage
+
+
+
+Which of the statement below is correct about a Pixel?
+Select one:
+a. A pixel has three properties a color, a position and is raster-based.
+b. A pixel has two properties a color and a grid position expressed in (x,y) coordinates..
+c. A pixel has two properties a color and a raster position.
+d. A pixel has two properties a color and a vector.
+The correct answer is: A pixel has two properties a color and a grid position expressed in (x,y) coordinates..
+
+
+
+Which pipe line stage brings about a more realistic graphic image?
+Select one:
+a. Display stage
+b. Application Stage,
+c. Geometry Stage
+d. Rasterization Stage. 
+The correct answer is: Geometry Stage
+
+You are given the point P1 (7, 10) and P2(10,7). What is the vector between them?
+Select one:
+a. (17,17)
+b. (-3,3)
+c. (-3,-3)
+d. (3,-3) 
+The correct answer is: (3,-3)
+
+
+
+You are given the points P1 (7, 10) and P2(10,7). What is the magnitude of the vector between them?
+The correct answer is: 3
+
+
+You are given the point P1 (7, 10) and P2(10,7). What is the is the projection of vector P1 on P2?
+The correct answer is: 140
+
+
+You want to map the vector P1 (7, 10) to a 3D coordinate system. What do you do?
+The correct answer is: homogeneous
+
+
+
+You are given the vector (-4,-3) What is its magnitude?
+Select one:
+a. 7
+b. -7 
+c. 5
+d. -5
+The correct answer is: 5
+
+
+
+Give any three characteristics of light that affect the quality of a graphic in computer graphic.
+The correct answer is: Reflection
+
+
+In computer graphics which projection results in less loss of image details?
+The correct answer is: Parallel
+
+
+You are given the vector A(4,3) and B(3,4) What is the projection of B on A?
+Select one:
+a. 24
+b. 25
+c. 84.6 
+d. 0.094117647
+The correct answer is: 25
+
+
+
+
+The following factors contribute to the quality of a computer graphic. Which ones does not.?
+
+CPU speed
+
+Angle of reflection
+
+Angle of refraction
+
+Distance of the source of light
+
+The size of the frustum
+
+Pixels levels of the camera
+
+The objects material
+Select one:
+A. i,v,vi,
+B. None of the above
+C. i,v,vi,vii Incorrect
+D. i,iii,v,vi
+The correct answer is: i,iii,v,vi
+
+
+
+
+You are given the matrix M ({4 5 6}{7 6 5}{3 2 1}). Give the transpose of matirx M.
+The correct answer is: ({4 7 3}{5 6 2}{6 5 1})
+
+
+In computer graphics which projection gives a real camera like image.
+The correct answer is: Perspective
+
+
+
+
