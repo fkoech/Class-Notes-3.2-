@@ -1,1 +1,353 @@
+CHAPTER 1
+-----------------
+Introduction
+---------------
+->the process of designing interactive arterfacts to be effective,
+efficient, easy, safe and enjoyable.
+->enjoyable to  use is an important aspect of system design.
+Because it helps people and the society appreciate the benefit o
+f computation-based devices.
+->One major concern of a system failure os the narrow optimization of
+a design that does not fully cater for contextual/appropriate factors.
+->Human(users) and their context circumstance are major component of the problem space that cannot be ignored
+that can not be ignored.
+->The greatest percentage of a program code in any interactive systems concentrates with user interaction.
+->Failure to focus on users and their tasks concext not only leads to
+poor user interfaces but also puts the entire system to risk
 
+Two reason why projects fails 
+  1)lack of user input during the design and development process
+  2)Lack of requirements that the final product/system should meet in the end.
+  
+  
+  Technology-driven VS user-centered design 
+  --------------------------------------------
+  ->the technology runs the design of the interface which give the user the
+  functionality of the system(technology driven)
+  ->or users may put demand on the functionality of the interface which runs
+  the design on the  technology(user-centered design).
+  
+  ->human computer interaction(HCI) can also be referred as Human Computer Interface(HCI),
+  Man-machine interaction(MM), advanced User interface(AUI)
+  ->Computer Human Interaction(CHI) or user interface(UI)
+  
+  
+  Definition of HCI
+  --------------------
+  ->HCI is the study of how people interact with computers and to what extent computers
+  are or are not developed for successful interaction with human beings.
+  ->Also can be defined as a multi-disciplinary subject concerning  with the 
+  design  of interactive systems in the context with the design  of interactive
+  systems in the context of user's  task and work.
+  ->Also defined as the study  of the interaction of humans and computers  with intent of developing 
+  better ways for computer to interact with people.
+  ->Discipline concerned with the design, evaluation and implementation of interactive
+  computing systems for human  use and with the study of major phenomena surrounding them.
+  ->disciple which is neither the study  of humans nor the study  of technology, but rather the bridging between those two.
+  
+  
+  Questions for designers
+  ---------------------------
+  ->what can the technology do?
+  ->how can you build it
+  ->what are the possibilities?
+  ->
+  
+  
+  
+  Diagrammatic representation of HCI
+  -----------------------------------
+  Human->actions->machine->functions->Goals
+                             
+  
+  ->Users/Humans - individual , group of users closely 
+  working together or  a sequence in an organization each dealing with some part
+  of the task/process of the overall task.
+  ->computer - any technology ranging from pc, VCR, mobile phones, large scale 
+  computers.
+  ->Interaction - Any kind of communication between the user(human) and system which could 
+  direct or indirect.
+  Interaction ensure that humans and machines get with each other and interact 
+  succcessfully.
+  
+
+Goals Of HCI
+-----------------
+->To develop or improve the safety, utility, effectiveness,  efficiency and 
+ usability of system that include computers
+ ->safety deals with the design of safety-critical systems, 
+ ->utility deals with the functionality of a system,
+ ->Usability is involved with making systems easy to learn and easy to use.
+ 
+ condition to produce computer system with good usability, developers should
+ -----------------------------------------------------------------------------
+ ->Understand the factors that determine  how people use technology.
+ ->Develop tools and techniques to enable building suitable/interactive systems.
+ ->Achieve effecient, effective, and safe interaction
+ ->Put people I.e users of the artefact first.
+ ->
+
+
+Disciplines Contributing and benefiting from HCI
+----------------------------------------------------
+->Computer science - provide knowledge about the capability of technology and ideas about how this potential can 
+harnessed.
+                   - It equips designers with skills to support  software analysis 
+                     , design, developement and maintenance of systems
+->Cognitive psychology - concerned with understanding human behavior and the mental 
+                        processes  that underlies it.
+                        -Key areas of concern are perception, attention, memory,
+                         learning , thinking and problem solving
+->Artificial intelligence - concerned with the development of intelligence computers
+                           programs with simulate different aspects of intelligent human behavior.
+ ->Philosophy, sociazing and anthropology - deals with impact of introduction of IT to society.
+ ->Business - concern with marketing the artifacts
+ ->Graphics designs - In order to produce appealing and effective presentations.
+ ->Techical writing - this discipline helps to produce an effective interface presntation.
+ ->Engineering and Design - Engineering is an applied science that takes the findings of science 
+                            and the utelizes it in the production of objects.
+                            Design contributes skill and knowledge to this process.
+  ->Social $ organization psychology - helps us to understand the wider context of interaction.
+                                     -it is concerned with studying the natural and causes of human behaviour in a social context.
+                                     
+                           
+
+Approaches of creating systems
+----------------------------------
+->There are 4 :
+      1)Cognitive - considers the ability of the human brain
+                    and sensory preception in order to develop and interface that will support the end
+                    user.
+      2)Predictive modelling approach - tries to predict what the user can do. examining
+      individual components of users experience in terms of the time it takes a user to
+      most complete a goal.
+      3)Anthropomorphic - Involve designing a user interface to possess humanlike qualities
+                         e.g an interface may be designed to communicate with users in
+                         a human to human manner as if the computer empathized with the user.
+                         using error messages like "we are sorry the page cannot be found"
+     4)Empirical approach - this approach is useful for comparing the usability of many
+                           conceptual design 
+                           Test done by conducting usability tests on each design concept.
+                           Often users will appreciate specific elements of each design concept
+                           which may lead to the developement of a composite conceptual design.
+                           
+                           
+                           
+                      Why HCI is important
+                      ---------------------
+->To achieve effecient, effective and safe product/systems.
+    productivity(introducing technology that does not support the work may cause reduced productivity)
+    safety(crashed air planes and nuclear power plants disasters have led to an understanding why HCI is important)
+->Products and systems cannot be developed and designed using the developers/designers themselve as 
+the norm
+->Users might not have a greate interest in technology.
+
+
+Effects of bad user interface
+---------------------------------
+->Increased user frustration which causes low productivity and/or utilization
+->Increased mistakes in data entry and system operation.
+->Inaccessibility functionality 
+->system failures because of user rejection
+
+
+Interaction design 
+----------------------
+->Aimed a dsigning interactive products to support people in their everyday and worksing lives.
+->It also aims at creating user experiences that enhances and entend the way people work, communicae and interact.
+->It is not only concerned with the same HCI fundamentals in terms of userbility goals.
+->It is not only concerned with the same HCI fundamental in terms  of usability goals
+  and design methodology , but also with  other goals.
+->Its is concerned with creating systems that are satisfying enjoyable, fun, entertaining, helppful, motivating.
+  aesthetically pleasing, supportive of creativity rewarding and emotionally fulfilling.
+ 
+ Design issue
+ ----------------
+ ->Four design issues as listed below;
+                 knowing the user
+                 reduce cognitive load
+                 engineer for errors
+                 Maintain consistency and clarity
+                 
+                 
+                 
+  Know your users
+  ----------------
+  ->You need to have General knowledge about humans(cognitive and perception psychology).
+  ->This can be done by performing user analysis to know specific group.
+  ->The rationale behind this is to minimized cognitive load and use resource effeciently
+  
+  
+  Important information of the users includes
+  -----------------------------------------------
+  ->physilogy - how the eye/brain reacts to certain colours and colour combinations.
+  ->Fatigue - how to create comportable workstations and peripherals.
+  ->Psychology - limitation of memory
+  ->Social psychology - how people work in groups, or in certain works environments.
+  ->previous experience, knowledge and capabilities.
+  ->Knowledge about computers:
+                      programming
+                      use of authoring/prototyping 
+                      software, graphics software and HCI principles
+                      such as how  to use colour effectively
+                      how to prevent/correct errors, using icons 
+  
+  
+  Reduce cognitive load
+  -------------------------
+  ->Making functions, objects and information visible.
+  ->since the human brain is limited in its capability: 
+   memory attention.
+   
+   
+   Engineering for errors 
+  -------------------------
+  ->Make it difficult for the user to make error eg.
+  ->Menus give the user the possibility alternatives(prevents  error but not mistakes)
+    , sound  can indicate right/wrong 
+  ->Provide good error  messages to lessen user frustration
+  ->provide reversibility actions to allow users to correct their own errors
+  ->Provide feedback-  so that know the state of the system.
+  
+  Maintain consistency and clarity
+  -----------------------------------
+  ->Maintains the standard operations and representations.
+  ->E.g appropriate metaphors helps building and maintaining users's mental models
+  ->By maintaining consistency and clarity, it becomes easier for users to learn, 
+  recognize and to foresee what is going to happen .
+  
+  
+  Forces shapping the future of HCI
+  ------------------------------------
+  ->the following technologies are taunted to shape the future of HCI:
+           1)Large memories and faster systems.
+           2)Networks communications and distributed computing.
+           3)New display technologies. 
+           4)specialized hardware.
+         five)widespread use of computers.
+         six)innovation and input technology.
+         
+  
+   Recognition Vs Recall
+   ----------------------
+   ->HCI is neither the study of humans nor computer but  the bridge between these two.
+   ->Its role is to enhance the quality of interaction between humans and  computers systems.
+   ->This is achieved through systematically applying knowledge abouts humans's goals, capabilities and limitations 
+     with knowledge about computer's capabilities and limitations.
+         
+  
+
+
+
+
+Chapter 4
+------------
+->x-tic of the design process
+-----------------------------
+1.focus on the users . involves the users in the design process.
+2.specific userbility and user experience
+3.iteration. 
+
+Knowing your users
+-------------------
+1.are they old user, young user, experience computer users or novice?
+2.
+
+
+
+Technqui of knowing your users
+-----------------------------------
+-fact finding methods
+-participatory design
+-watch
+-use your imagination
+-Using the personas
+
+
+Required analysis
+----------------------
+any condition that has to be met  or possess by a system component to satisfy a contract,
+standard  specification
+
+types of requirements
+---------------------------
+-Functional requirement use formal informal or semiformal notation or suitable mixture ir
+pseudocode, algorithm flow charts
+-non functional, tell some behavior of the system, ie security,  the cultural and political environment the
+system operates
+-Data - captures the kind of data needs to be stored in the databases and how they will be relating to one onother.
+-user requirements - ie captures the characteristics off the user eg cultural, education.
+-Environmental requirement - ccaptures the circumstance in which the product will be expected to operate.
+can be:
+     1)physical 
+     2)social 
+     3)organisational(heirarchy, IT departments attitude, user support, 
+     communic
+-Usability - captures the usability related goals learnability, throught
+
+Requirement gathering techniques
+------------------------------------
+->Questionnaire
+  series  of questions designed to elicit specific information.
+  require different kinds of answers 
+  Give quantitative or qualitatives data
+  
+  ->interviews
+  Good for exploring  issues
+  can be structured unstructured or semi-structured
+  forum for talking to people but  a are time cunsuming
+ -> workshop
+  Useful if you want to gain a consensus view and/or highlighting area of confict.
+  ->observationd
+  stakeholderrs are to watched as they perform their day-to-day tasks
+  good for understanding the nature and context of the tasks
+  ->study the existing documentation(procedures and rules)
+  elicit data abouut the steps the s
+  
+  
+  User profile analysis
+  ----------------------
+  ->Technique that enables designers understand the characteristics of the target group/users.
+  Form of solution
+      a low selling pager
+        level of support to be provided
+         -appointments
+         maintain
+              add, modify, delete, view appointment
+              adjust alarm
+      
+  User profile analysis(Railway ticket system)
+------------------------------------------------
+      expert level to be provided
+         novice
+         intermittent
+         expert
+         
+      familiarity with  specific hardware and software
+         
+      skill base
+          ie are they able to type accurate and quick on QWERTY or alphabetic keyboard
+      General education level
+      
+      organisation-specific knowledge
+      
+      
+      User profile analysis characteristics
+      ----------------------------------------
+      ages group
+      educatin background 
+      familiarity with technology
+      IT skills
+      hardware and SW 
+      Frequency use
+      affordability
+      social cultural dimenstion
+      context of use
+      special needs 
+      skillls base
+      Sw
+       
+       
+       
+       EXample
+       ---------------------
