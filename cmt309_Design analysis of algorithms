@@ -1,1 +1,136 @@
+TOPICS 
+--------
+-Introduction
+  .What is an algorithm
+  .What is a program 
+  .Aplication, the study of algorithms,  importance of analyzing algorthim,
+  .Complexity, RAM model,
+  .Why study algorithms
+  .Performance efficiency comparison  of two algorithms
+  .Methods of proof
+  .Algorithm analysis
+  .Algorithm analysis
+  .Asymptotic and notation
+  .function of grrowth rate
+  .estimate running time
+  .Big-oh notation
+  .Big-oh Theorems
+  .Asymptomatic notations properties
+  .Manipulating  asymptotics notation
+  .determining complexities in general 
+  .growth rate examples
+  .primitive operations
+  .counting primitive operations
+-Recursion
+  .recurrence relations
+  .recurrence equations
+  .solving recurrences
+  .master theorem performance
+-Sorting
+   .Properties of sorting algorithms
+   .bubble sorting 
+   .insertion sorting 
+   .selection sorting
+   .shell sort
+   .Heap sort
+   .merge sort
+   .Quick sort
+   .counting sorting
+   .radix sort
+   .Bucket sort
+-Greedy algorithm
+   .Definitions 
+   .a simple greedy algorithms
+   .knapsack problem
+   .huffman  code
+-Spanning Tree
+   .Minimum spanning tree
+   .kruskal's algorithms
+   .prims algorithms
+   .Dijkstra's algorithms
+-Dynamic programming 
+    .matrix chain maltiplication
+    .Longest commo subsequence
+    .applications
+-Graph algorithms
+    .Definitions
+    .Adjacency matrix
+    .Adjacency list
+    .breadth first search
+    .depth first search 
+    .topological sort
+    .strong connected components
+    .applications
+-Binary search tree
+   .Implementations
+   .inorder tree walk
+   .preorder  tree  walks
+   .postorder tree walks
+   
+   
+   
+   Purpose
+   ---------
+   .Algorithm are the heart of computer science.
+   .their essential nature is to  automate some aspect of the collecting, organizing  and processing of information.
+   .enable making of sense of infiormation to manage, organize and search it, and to use it for practical purposes.
+   .efficient algorithm enhances fasteness, little memory and provide guarantees on their performance.
+  
+   
+    Introduction
+    -------------
+    .Algorithms - rules to be followed in problem solving  operations.
+                - finite sequence of well-defined, computer implimentatable instructions, typecally  to solve a class of problems or to perform computations.
+                - Are always unambiguous.
+                - Used as specifications for performing calculations, data processing, automated reasoning.
+                - As an effective method , it can be expressed within a finite amount of space and time and in a well-defined formal language for calculating  a function.
+                -sequence of well defined computer  implementable instructions.
+                -solves  a class of problems or to perform computations.
+                -well-defined computational procedure that takes some values as input and produces some values as output.
+                -not dependent not a particular programming language, machine, system or compiler.
+                -They are mathematical entities, which can be though of as running on some sort of idealized computer with an ifinite randoem access memory and unlimited word size.
+                -algorithm design is all about the mathematical theory behind the design of good programs.
+                -Are mathematical objects.
+   algorithm's efficiency - is a function of the amount of computational resource it rquires, measured typically as execution time and the amount of space, or memory, that the algorithm uses.
+   three thinks you require to present an algorithm -
+                     - present a clear, simple and unambiquos description of the algorithm.
+                     -present a justification or proof of the algorithm's correctness.
+                     -present a worst case analysis of the algorithm efficiency.
+
+algorithm analysis - the basic element includes:
+                                              -asymptotics
+                                              -summation
+                                              -recurrences.
+             asymptotics 
+                -involves O-notation(big-oh) and its many relatives Ω, Θ, o (“little-Oh”), ω
+                -provides us with a way to simpliffy the functions that arise in analyzing  algorithm running  times by ignoring constant factors and concentrating on the trends for  large values of n.
+                - ignore constant factors - multiplicative constants are ignored for example, 347n is Θ(n).
+                -constant factors appearing exponents cannot be ignored for example, 23n is not O(2n).
+  programs - collection of instructions that can be executed by the computer to perform specific task.
+           - written by a programer in a programming language.
+           - may be executed with the aid of an interpreter.
+           -collection of computer programs, libraries and related data are referred to as software.
+Why study algorithm - programming is a complex task. 
+                    - programming projects involves storing and accessing larg quantities of data efficiently.
+                    - many programming projects involves solving compex computational problems for  which simplistic or naive solutions may not be efficient enough.
+                    -the complexity may involves numerical data where the topic of algorithms and analysis is important.
+                    
+
+ General approaches to algorithm design
+               -
+
+Consider the graph shown below.
+
+
+prims-algorithm-questions-answers-q7
+
+
+Which of the following edges form the MST of the given graph using Prim’a algorithm, starting from vertex 4.           (1 Mark)
+Select one:
+ (4-3)(3-2)(2-1)(1-5)
+(4-3)(5-3)(2-3)(1-2)
+(4-3)(3-5)(5-2)(1-5)
+ (4-3)(3-5)(5-1)(1-2)
+
+https://www.sanfoundry.com/fractional-knapsack-problem-multiple-choice-questions-answers-mcqs/
 
