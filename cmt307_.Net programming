@@ -1,1 +1,747 @@
+.net
+---- 
+    .cross platform
+    .open source developer  platform  for bulding many different types of application.
+    .with it you can use multiple languages, editor and libraries.
+  
+  .ASP.NET 
+  ------------
+     .is a web application framework developed and marketed by microsoft.
+     .Allow programmers to build dynamic web sites.
+     .allows  the use of full featured programming language ie c#
+     .works on top of the HTTP protocol
+     .uses the HTTP commands and policies of set browser-to-server bilateral communication and cooperation.
+     .Is part of the microsoft .net platform.
+     .ASP.NET applications are compiled  code,  written using the extensible and reusable components of objects present in .NET framework.
+     .Used for produce interactive, data-driven web applications over the internet.
+     .consist of large number of control such as text boxies, buttons, labels for aassembling, configuring and manipulating code to create HTML pages.
+     .Is a technology which works on the .NET framework that contains all web-related functionalities.
 
+ASP.NET web forms Model
+------------------------------
+.Extend the event-driven model of interaction to the web applications.
+.the browser submits  a web form to the web server and the serer returns a full markup page or HTML page in response.
+.ASP.NET framework helps in storing the information regarding the state of the application in:
+                .page state
+                .session state
+.page state is the state of the client ie the content of various input fields in 
+web form.
+.Session state is the collective information obtained from various pages the user visited and worked with ie 
+
+  ASP.NET runtime
+  -----------------
+  .carries the page state to and from the server across page requests while generating ASP.NET runtime codes.
+  .Incorporates the state of the server side component in hidden fields.
+  .the server become aware of the overall application state and operates in a two-tiered connected ways.
+  .transforms the .aspx page into an instance of a class, which inherits from the base class page of the .Net frameworks.
+  .ASP.Net page is an object and all its components 
+  
+  The ASP.NET component Model
+  ----------------------------
+  .provides various building blocks of ASP.NET pages.
+  .Basically it is an object model, which describes;
+          .server side counterparts of almost all hTML elements or tags, i.e <form> 
+          .server controls , which helps in developing complex user-interface. ie calender control or Griview controls
+  
+  .NET framework 
+             .net is a platform independent/cross platform as well as language-insensitive.
+             .net is an integrated environment which allows  programmer to build networked application, distributed web service, wb application, mobile application, desktop based application.
+             .it consistent object-oriented providing a portable as well as managed enviroment.
+             .it provides tools and technologies necessary compile time and runtime foundation to build and run any language that conforms to the common language specification(CLS)
+             .built upon standard technologies like XML and SOAP .
+             .it is more open standards rather than microsoft its proprietary tendencies.
+             .It offers a fundamental shift in microsoft strategy by moving application development from client-centric to server-centric.
+             
+          
+factors that motivates .NET
+---------------------------
+-popularity of electronic devices meaning it's capable of providing interaction between wide varieties of devices
+-communication between programs can occur despite the disparate language.
+-It is object-oriented programming, compile once and run everywhere and service-oriented application.
+
+sevices offered by the .Net framework to programmer
+-----------------------------------------------------
+-independent from specific language or platform, meaning that application can be writen in any .net compatible language
+-allows programmers to run .NET managed code in a virtual machine(Common Languahe Runtime)
+-It also provides a very  good environment to develop networked  application and web service.
+-Provides programming API and unified language independent development framework.
+
+   Components of .Net Framework 
+   ------------------------------
+      (a)common language runtime or (CLR)
+         -------------------------------
+         .Engine behind the .NET framework that handles execution of all managed application code.
+         .Works as mediator between operating system and the application
+         .Perform : 
+              1)memory management
+              2)exception handling
+              3)debugging
+              4)security checking(enforcement of code assess security)
+              5)thread execution
+              6)code execution
+              7)code safety
+              8)verification of type safety
+              9)compilation
+              10)Thread execution
+              11)conversion of IL to native code.
+              12)Access to metadate(enhanced type information)
+              13)Interoperation between managed code, COM object and pre-existing DLL
+              14) automation of object layout.
+              17)support for developer service(profiling, debugging)
+              
+           .code that is directly managed by the CLR is called the managed code.
+           .When the managed code is compiled, the compiler converts the source code into a CPU independent(IL) code.
+           .A just in Time(JIT) compiler compiles the IL code into native code , which is  CPU specific.
+       
+       (b).Net framework class Library  
+         .collection of language-independent and type safe reusable classes, interfaces and values  that expedite and optimize the developement process and provide access to system functionality.
+         .Libraries are arranged into a logical grouping  according to their functionality and usability is called namespace.
+         .privide the consistent base types that are used across all.NET enabled languages.
+         .classes are accessed  by namespace, which reside within assemblies
+         .the system namespace is the root for types in the .NET framework.
+         
+         .it contains a huge library of reusable types.
+                         classes
+                         interfaces
+                         structures
+                         enumerates values
+                       they are collectively called types
+        N/B CLR and FCL privides a core service such as ASP.NET, windows, ADO.NET, windows forms, XML
+       
+        (c)common language specification
+            .It contain the specifications for  the .Net supported languages and implementation of language intergration
+        (d)common type system
+            .Provides guidelines for declaring, using, and managing types at runtime, and cross language communications.
+        (e)Metadata and assemblies
+            .binary information describing the program
+            .Stored in a portable executable file(PE) or in the memory.
+            .Assembly is a logical unit consisting of the assembly manifest, type metadata, IL code and a set of resources like images file.
+        
+        (f)window forms
+           .Contains the graphical representation of  an window displayed in the application.
+           .its a framework used to design rich clients for windows platform .
+           .offers programmers with RAD(rapid application development),rich set of control, data aware, AcitivesX support, licensing,accessibility, printing support, UI inheritance.
+           
+        
+        (g)ASP.NET(active server pages) and ASP.NET AJAX
+           .AJAX is an extension of ASP.NET for developing and implementing AJAX functionality.
+           .ASP.NET AJAX contains the components that allow the developer to update data on a website without a complete reload of the page.
+           .ASP.NET provides an abstraction layer on top of HTTP on which the web application are built.
+           .Also provide high-level entities such as classes and components within an object-oriented paradigm
+           .ASP.NET - provide the core web infrastructure such as web forms  for UI based development and web service for programmatic interface development.
+           .ASP.NET - is a super set of what developers already know as active server pages..
+           .runs inside  the CLR.
+           .It supports any languages that runs in the CRL
+           .It provides numerious new services, like cache management, cluster-ready session management, cookies-less session, browser version-based automatic code generation.
+           
+           
+         (h)window workflow foundation(WF) 
+           .helps in building workflow-based applications in windows.
+           .It contains activities workflow runtime, workflow designer, and a rules engine.
+          
+          (i)windows communication foundation(WCF)
+            .technology for building and executing connected systems
+          (j)LNQ
+             .imparts data querying capabilities to .Net  languages using a syntax  which is similar to the tradition query language SQL.
+         
+         (k)active data object(ADO.NET) 
+         -is an evolution of ADO to provide functionalities for data access.
+         -has much richer support XML
+         
+         (L)Core base classes
+          -Provides infructure services such as security, transaction management
+         (m)compilation in .NET
+           -applications developed in the .NET platform don't directly interact with the os but rather talks to the CLR.
+    N/B- When we write a program using any of the .NET languages like C#, the source code does not get compiled to machine code.
+        -each language specific compiler(VB compiler, C# compiler) converts the source  code to any intermedidate language code which is known as IL code or microsoft intermediate language(MSIL) or common intermediate language(CIL) which is CPU independent set of instructions that can be converted to the native code.
+        -IL code is used as the output of a number of compiler and as the input to a CLR JIT compiler.
+        -the compiler language runtime has a number of just in time(JIT) compiler each working on a different architecture depending on the operatng system.
+        -The JIT convert the MSIL code into native code to which is operating system specific, the overall effect being the same IL code being able to run on different os.
+    -Net  employs two stages to compile a program and there are two key rationale behind the to phases of complicate
+    1-To achieve platform independence - since .net framework can be installed on different platform and this will enable you to execute  .NeT programs without any modification to code.
+    2-To achieve  language independence since .NET applications are not tied to particular language and therefore its possible for  program to consist of several .NET compliant language.Meaning old and new  components can be integrated together seamless.
+   
+  advances associated with CLR execution
+  ---------------------------------------
+  -support for developer service (debugging)
+  -interoperation between managed code and unmanaged code.
+  -managed code environment
+  -improved memory handling 
+  -improved garbage collection
+  -JIT allows code to run in a protected environment as managed code.
+  -JIT allows the IL code to be hardware independent.
+  -CLR also allows for enforcement of code access security
+  -Verification of type safety.
+  -Access to metadata (enhanced type information)
+  
+  
+  Mechanism used by  CLI to enable .NET to support more than one programming languahe
+  -------------------------------------------------------------------------------------
+  -common type system(CTS)
+  -common language specification(CLS)
+  -intermediate language code(IL code)
+  
+  CTS - CLR define a CTS
+      - a standard type system used by all .NET language meaning that all .NET compliant us the same representation for common data types.
+ 
+ Intermediate language
+            -.NET language are not compiled to machine code.
+            -they are compiled to an intermediate languahe(IL).
+            -CLR accepts the IL code and recompiles it to machine code.
+            -the recompilation in just in time(JIT) meaning it is done as soon as a function  or subroutine is called.
+            -In cases where there is not enough memory it is discarded thus making JT process interpretive.
+            
+            CLS - Not all languages supports all CTS types and features eg
+                            -C# is case sensitive, VB .NET is not
+                            -C# supports pointer types(in unsafe mode)
+                            -C# supports operator overloading, VB.NET does not.
+                - drafted to promote language interoperability.
+                - its a set of specifications that all languages and libraries need to follow.
+                -Any   language that conforms t the CLS is a .NET language and it has the ability to take full advantage of the FCL.
+                -This will ensure interoperability between languages.
+       
+       Rules and standards imporsed by CLR 
+       ----------------------------------
+       1)object declaration, creation and use.
+       2)Data types, language libraries
+       3)Error exeption handling.
+       4)Interactive development Environment(IDE)
+       
+       
+       Comparison and constrast of .NET & J2EE
+       ---------------------------------------
+       a)Execution Engine
+            -J2EE java source code compiles into machine independent byte code. The Runtime environment is java virtual machine(JVM)
+            -.NET any compliant language compiles into MSIL/CIL the runtime evironment  is common language  runtime(CLR)
+            -Both JVM and CLR support services, such as code verification, garbage collection, and code security.
+            
+       b)cross platform  portability
+            -J2EE - its platform  independent  but java DEvelopment kit(JDK) should exist in target machine.
+            -.NET -support windows platform but common language runtime (CLR) should exist on target machine.it suport other platform provided it has its own JIT complier.
+      c)language support
+          -J2EE tied to java but support other languages via interface technology.
+          .NET- its language independent supporting any language if mapping exists from that language to IL.
+      d)tools support
+       .J2EE - there are many IDE for programming in java
+       .NET supports only one IDE for writing the code i.e visual studio.
+       
+       
+    c#
+    ---
+      .simple,modern, object-oriented and type-safe programming language.
+      
+    .NET Core 
+    --------
+       .Cross-platform .NET implementation for websites, servers, and console apps on macOS , windows, linux.
+       
+   .NET Framework
+   ---------------
+       .support website, services, desktop apps, and more on windows.
+       .made of an object-oriented hierarchy.
+       
+   .Xamarin/mono - is a .net implementation for running apps on all the major mobile operating systems.
+   
+   ASP.NET web application
+   -----------------------
+   .made of pages.
+   .when a user requests an ASP.NET  page, the IIS delegate the processing of the page to the ASP.NET runtime system.
+   
+   TERMINOLOGIES in(dotnet new webapp -o directoryname)
+   ----------------------------------------------------
+   -> dotnet new - command create a new application.
+   -> webApp - a parameter that select what template to use when creating you application.
+   -> -o -  creates a directory named directoryname for this case.
+   -> --no-https  - flag specfies not to enable HTTPS.
+   -> cd directoryname - command puts you into the newly created app directory.
+   
+   What files where created
+   ------------------------
+   -> in directoryname  directory, the following  web applications  are ready to run:
+      1) startup.cs - contains all the settings.
+      2) the mywebapp/pages directory contains some examples web pages for the application.
+      3)mywebapp.csproj - defines what libraries are referenced.
+      
+   Visual studio 
+   ----------------
+   .Integrated development environment for writing, compiling and debugging the code.
+   .provides a complete set of development tools for building ASP.NET web  applications etc
+   
+   
+   The Visual Studio IDE
+   ----------------------
+     .The file named Default.aspx contains the HTML and asp code that defines the form, and the file named default.aspx.cs(for c# coding) or the file named DEfault.aspx.vb( for VB coding)
+     .the primary windows  in the visual studio IDE is the web forms designer window.
+     .Other supporting windows are the toolbox, the solution explorer, and the properties window.
+  
+  working with views and  windows
+  ------------------------------------
+  .To  change the web forms designers  from one view to another, click on the design  or source button
+  .To close a window, click on the close button on the upper right corner and to redisplay, select it from the views menu.
+  .To hide a window, click  on its auto hide button. The windows then changes into a tab. To display again, click the auto hide button again.
+  .to change the size of a windoww, just drag.
+  
+
+
+
+Project Extension tools
+  .visual studio productivity power tool
+  .web essentials 
+  .resharper
+  
+  
+ simple program example with explanation
+ ---------------------------------------
+ using system
+ 
+ namespace hellothere
+ {
+  class program
+  {
+   static void Main(string[] args)
+    {
+     Console.WriteLine("am learning C#")
+    }
+  }
+ }
+ 
+
+ ->using system - means that we can use classes from classes from the system namespace.
+ ->namespace - used to organise your codes.
+             - it is the container for classes and other namespaces.
+ ->{} - makes the beginning and the end of block of codes.
+ ->class - it it is the container for data and methods which brings functionality to your programs
+         - every codes should be inside class.
+ ->console - is a class of system in the namespace.
+           - has a writeLine() method that is is used to output/print text.
+           
+->a file  should be saved with an extension of .cs
+
+->WriteLine() - common method for outputting something.
+              - function as Write()
+->writeLine() - prints the output on a new line each time.
+->Write() - print on the same line.
+          - ad spaces when needed for better readability.
+          
+          
+          
+          Comments
+          ==========
+ ->used to explain the c# codes
+ ->also makes it more readable.
+ ->also used to prevent executions when testing alternative code.
+ ->single comment - //
+ ->multi-line comments - /* sentences to be commented */
+ 
+ 
+    Variable
+    ========
+->Containers for storing data values.
+->in C#, they are of different types, defined with a different keyworks:
+->how it is declared:
+              type variableName = value;
+-> equal sign(=) is used to assign values to variables.
+->can be declered and values assigned later:
+          int yourNum;
+          yourNum = 30
+          Console.WriteLine(yourNum)
+->Assigning a new value to an existing variable will overwrite the previous value:
+        yourNum = 5040;
+        Console.WriteLine(yourNum)
+        
+        
+        declaring many variables
+        -----------------------
+     ->you use a comma-separated list if declaring more than one variable of the same type:
+                int x = 5, y=6, f= 50;
+                Console.WriteLine(x+y+f)
+          
+          Identifiers
+          ===========
+   ->all c# variables must be identified with unique names.
+   ->the unique names are called identifiers.
+   ->can be short names like x and y  or descriptive names like age, sum.
+   ->descriptive names should be used to create understandable and maintainable code.
+   
+   
+   General rules for constructing names for variables
+   ---------------------------------------------------
+   ->contains letters, digits and underscore.
+   ->must begin with a letter
+   ->should start with lowercase letter and no whitespace.
+   -> should not used reserved words ie. int, double
+   ->it is case sensitive ie myVar and myvar
+   
+        
+        
+        Constants
+        =========
+ ->used when you don't want variable value to overwrite existing values.
+ ->it is unchangeable and read-only
+     
+        Data types
+        ---------------
+ ->int myNum = 7;
+ ->double doubleNum = 3.232D;
+ ->char myLetter = 'A';
+ ->bool myBool = true;
+ ->string myText = "hello"
+ ->it specifies the size and type of variable values.
+ 
+ Numbers
+ --------
+ ->divided into:
+          1)integer type - store a whole number both negative and positive.
+                         - valid types are int  and long.
+          2)float point type - represents a number with a fraction part.
+                             - contains one or more decimals.
+                             - valid types are float and double.
+                            
+                            
+                            int myNum = 10000;
+                            console.writeLine(myNum);
+                            
+                            long myLong = 1020303040000302020L;
+                            Console.writeLine(myNum);
+                            
+                            
+                            float myFloat = 333.23F;
+                            Console.WriteLine(myFloat);
+                            
+                            double myDouble = 19.99D;
+                            Console.WriteLine(myDouble);
+                            
+     ->float is only six or seven decimal digits while double variable a precision of about 17 digits.
+     
+                            
+scientific numbers
+----------------
+->a floating point number can also be a scientific number with an "e" to indicate the power of 10
+  float f1 = 223e3F;
+  double d1 = 23232e2D;
+  Console.WriteLine(d1, f1);
+  
+  
+  
+  
+booleans
+-------------
+->declared with the bool keyword, and can take the value true or false.
+      bool imFunny = true;
+      bool amIgloom = false;
+      Console.WriteLine(imFunny);
+      Console.WriteLine(amIgloom);
+      
+ characters
+ --------------
+ ->char is used to store a single character.
+ ->the character is surrounded by single quotes like 'A'
+          char myGrade = 'A'
+          Console.WriteLine(myGrade);
+          
+ Strings 
+ -----------
+ ->store sequence of characters(text).
+ ->surrounded by a double quotes.
+      string myName = "Felix Koech"
+      Console.WriteLine(myName)
+      
+
+
+Type Casting 
+------------------
+->it is when you assign a value of one data type to another type.
+->can be:
+       1)implicit casting(autimatically) - converts  smaller type to a larger type.
+         char > int > long > float > double
+       2)explicit casting(manually) - convert a larger type to a smaller size.
+         double > float > long > int > char
+               int myInt 4;
+               double myDouble = myInt;
+               Console.WriteLine(myInt) # output is 9
+               Console.WriteLine(myDouble); //outputs 9
+               
+               
+               double myDouble = 9.29;
+               int myInt = (int) myDouble;
+               Console.WriteLine(myDouble); //9.29
+               Console.WriteLine(myInt); // 9
+               
+               
+  type conversion  methods
+  ---------------------------
+  ->it is posible to convert data types explicity y using built-in methods, such as convert.Toboolean, convert.Todouble, convert.ToString, convert.ToInt32(int) and convert.ToInt74(long)
+  
+                        
+                 int myNum = 394;
+                 double myDouble = 3030.23D;
+                 bool myBool = true;
+                 Console.WriteLine(convert.ToString(myNum);
+                 Console.WriteLine(convert.Todouble(myNum);
+                 Console.WriteLine(convert.Toint32(myDouble);
+  
+                      
+  
+  summary of introduction 
+  ---------------------------
+  Before .NET programming , there were a number of tools to write programers as depicted before:
+            -windows GUI development: win32 API,
+            -visual basic
+            web developemt ASP
+            -Java
+            -embrace and extend: Visual J++
+            
+ -fame pillars of OOP (encapsulation, inheritance, abstraction and polymorphism)
+ -limitation of the java is that  it as limited ability to access non-Jva APIs, 
+                   - little support for true cross-language integration and it's not appropriate for many graphically or numerically intensive.
+                   
+                   
+                   
+                   component object model(COM)
+                   ------------------------------
+-microsoft previous application development framework which enable a programmer reuse binary code.
+-language independent 
+-Doesnot support for classical inheritance.
+-
+            
+  
+  
+  Chapter 2
+  ---------------
+  Microsoft Visual Studio IDE
+  -----------------------------
+  ->.NET is a graphical programming language that lets you build a complete application without writing  any source code.
+  ->.NET allows developing application quicky; this is called rapid application Development(RAD)
+  ->C# is a multi-paradigm, object-oriented programming language, implemented on the  .NET framework.
+  ->.NET provides the following two support libraries that are key to web and database develoment.
+         ASP.NET (active server pages.NET)
+         ADO.NET(activeX  date Objects .NET)
+  ->
+  
+  
+  
+  Creating A new ASP.NET project
+  -------------------------------
+  ->New project ->  select language -> platform to windows -> project type ->next button
+  ->Give the project appropriate name
+  ->select the location of the project and check
+  ->place the project and solution in the same directory
+   ->next click the create  button to which directs you to the next window.
+   ->Ensure click empty and check and check  configure for HTTPS in case you are creating a secure application.
+   ->click 'create' button to create your application.
+   n/b this may  take some few minutes, be patient as the proect is being created
+   
+   
+  
+  The visual Studio.NET features
+  ------------------------------------
+  ->a standard menu, toolbar, and multiple windows that can be docked and minimized.
+  ->Audo-hide is a particular nice feature of visual studio .NET, helping to reduce the number of open windows in the environment, while still keeping those windows handy when needed.
+  ->THE MANU for visual studio  .NET is the same for any .NET language for all programming languages.
+  ->The file menu was designed to support the solution explorer with handing multiple projects at one time.
+  ->the edit menu includes the  standard text  editing  features, such as copy, cut and paste  
+  ->The EDIT MENU also outine and comment/uncomment source code.
+  ->THE VIEW MENU  allow you to switch between the source code and ASP>NET designer edit windows,
+  ->THE VIEW MENU brings up dock-able windows that have been closed.
+  ->THE PROJECT MENU allows you to add  new components and files to the project, such as a new ASP>NET form, databases, controls
+  ->THE BUILDMENU includes the commands needed to complile, build and execute the program on a web browser program.
+  ->THE DEBUG MENU is used when stepping through a program that has been stopped with a breakpoint or error  condition.
+  ->DATE is used when connecting an ADO.NET  dataset .
+  ->THE FORMAT MENU is a user-interface menu  that helps to align  and format the position and size of controls.
+  ->THe ToolSMENU includes numerious  commands that may be needed during a development project.
+  ->the most important  however is the last item in the tools menu , calledOptions.
+  ->use this  command to customize the user interface and setting of your project.
+  ->THE WINDOW MENU - allows you to select among the open files loaded into visual studio .NET  and arrange the windows  on the screen.
+  ->THE HELP MENU INCLUDES numerious commands for search  the integrated help sytem that comes with visual studio .NET 
+                   if you have ever stuck on a strange error message or language feature , find help on the item using this menu.
+  ->TOOLBARS povides a means to quickly perform some action by pressing one of the icons on a toolbar.
+            -there are over 20 toolbars to choose from, 
+            
+  ->code editor window this component is loaded with functionality and support numerous languages 
+                      -This editor is capable of editing just about any type of file imaginable with ease.
+   ->solution explorer - contains the files and resources  as well as individual projects,  that are used by you application.
+                       -this windows was calledProject explorer  in earlier version.
+   ->Properties windows - is the part of the windows forms designer 
+                          very useful  for windows forms as well as for web form
+                          
+    ->ASP.NET properties are the key to designing a custom user interface with control
+    ->Its used to allow web programmer set properties of different objects in your projects.
+    ->The main  sections are:
+                      1)Group View - This changes the manner in which the properties can be viewed, either with each property in  group(all data properties together) or by alphabetical order.
+                      2)property view - this displays all the properties that are available to the control that has been selected.
+                                      - this are all the Design  time properties some will not be visible as they are  run time properties
+                                      -they will only be set  when the web site is running.
+                      3)Event view - these are the events that may be associated with the control.
+                                   - all control have standard events such as load, init, prerender.
+ 
+                     4)properties description - this provides a description of the property that is currently selected.
+                     THe EVENT  VIEW of a control's property box allows for the creation of specific handlers for the events that the control is able to create.
+                     ->The image contol has the following events, the load, unload, prerender and init event are common to all control.
+                     ->For example, the load event is created when the contol loads, the prerender event is created before the control has been loaded on the screen.
+                     >OUTPUT WINDOW - shows the output from when the web site is compilied.
+                                     -There is also an error list box which shows the errors tha are currently on the site,
+                                      the warning and  general messages.
+                                     -This can be very useful when creating the site as error can  be caught before the site is compiled.
+                                     
+                   
+             Design view
+             ------------
+    ->The design tab allows the web site to be developed in the development windows in a drag-and-drop manner.
+    ->This allows control to be dragged onto the screen, and then selected so that the properties can be changed or set.
+    
+    
+      Source view
+      ------------
+      ->Changes the development window to display the HTML.
+      ->The design  view allows for controls to be dragged and placed on the screen with the HTML automatically created.
+      ->The source view allows for a text-based interface allowing for the manipulation of the HTML.
+      ->Therefore, the label control in the code will look like:
+                     <asp:Label runat="server" ID="txtHello"text="Hello World"><asp:Label>
+      ->the label is part of the ASP.NET library  of control and as such has the prefix of asp;, showing that it is a as[ .NET control.
+      ->Every  ASP.NET control must have two parts defined in the code, the ID and the runat attributes,  missing these will lead to errors.
+      ->It should be noted that ASP.NET tags are not valid XHTML and will fail a validation check.
+      ->To check to see if an ASP.NET page is XHTML valid the page should be run through the server and the HTML source used to check the page.
+      
+      
+      Tool Box
+      ---------
+      ->Contains all the drag and drop controls that are available within  visual studio, these are split into different panel, each  panel  contains  a different set of controls such as standard,
+      ->contains contols such as label, text box, button,  calender and other  commonly used controls
+      ->The Data panel contains the controls that are often used to display data such as the grid view, data list etc.
+      ->The Login panel contains  the controls that are most often used within the authorization and aspected of the web.
+      
+      Server Explorer
+      ---------------
+      ->Contains any connections to databases that have been setup in visual studio as well to databases that have been setup in visual studio as well as any database files that are contained within the website.
+      ->the server explorer allows for database management, specifically of MS SQL server, allowing the creation of table , deletion, inserting of data and the  creating of stored procedures.
+                                     
+                                     
+                                     
+       Chapter 4
+       -------------
+       ->ASP.NET with visual  has two methods of allowing code to be used with the ASP page(ASPX)
+       ->Either as a separate file(.cs file) or within the ASP page.
+       ->It is good  practice to have the code files separate from the ASP page because it makes coding easier and neatier as the two are kept seperate and it is easier to find individual code when required rather  than searching a long ASPX page.
+       ->To get to the code file associated in the ASP page either press F7 or open the file with the CS(C#) extension using the solution explorer.
+       ->The ASP.NET page is known as web form. When creating a new web form make sure that the place code is separate file' box[ is selected.
+       ->This  should also be done when creating other  ASP .NET elements such as master pages, custom controls.
+       ->To send  information back to the server the <form> tag  is used.
+       ->It should be noted that with ASP.NET only one <form> tag should be used on a page.
+       ->The form tag generally should look like:
+         <form id="form1" runat="server">
+       ->All ASP.NET controls have the prefix <asp:> and must have the id and runat="server" attributes, missing these will create  an error and may not allow the site to run as intended.
+       ->
+       
+       
+       ASP.NET and Master pages
+       --------------------------
+      ->The master page allows a single page to contain the design and layout for the whole of a web site
+      ->The master page is inherited by other pages and is not considered a viewable page in its own right,
+      ->As such to view a master page it must   first be used by a web form(.ASPX page)
+      ->The master page uses  of a control called the content placeholder which allow  for individual pages to display content in addition  to that being  contained within the master page.
+      ->Allowing  for  areas of the web site that can only  be changed be altering the master page  and sections of  the we site that are specified to individual pages.
+      
+      
+      
+      stylesheets
+      ----------
+      ->Can be attached to the master page in one of two main ways: 
+                        -if the master  page is currently in the source view select the stylesheet in the solution explorer and drag it into the <head> seletion of the HTML code.
+       ->This creates  a <link> tag to the stylesheet.
+       <link href="styleshhet.css" rel="stylesheet" type ="txt/css"/>
+       ->If the master page is in the design view the select the stylesheet from the solution explorer  and drag it onto the paage, this will create the <link> tag in the <head> section of the HTML, code.
+       
+       
+       contentPlaceHolder
+       -------------------
+       ->Masterpage is the overall template for the web site it would not be a good idea to ollow people to change its layout  whenever the masterpage is inherited by another page.
+       ->To allow each page to have its own content the <asp:ContentPlaceHolder> is used, and at least one must be included in the master page to allow other pages fo display their  own specific information.
+       ->Any information placed within the <asp: ContentPlaceHolder> in the master page is not inherited by other pages and as such should be lft blank.
+       ->Master page
+                -cannot be viewed directly 
+                -it need to be inherited by another page.
+                -select the page Default.aspx, right click  and select delete.
+                -right click on the name of the web site in the solution explorer and select ADD NEW ITEM,
+                -select the master page and use the default name MasterPage.master
+                -make sure the place code in separate file check box is selected click Add
+                -With the MasterPage.master open in the source view  you should see the code for the Master page sets out the page.
+                -There are currently two <asp:ContentPlaceHolder> tags,
+                -one in the head section and one in the body of the HTML.
+                -Remove the one in the head section of  the HTML  with the ID "head", all that should be in the head is the <title> tag.
+                -once the master page has been created the default page for the site needs to be added.
+                -Right click and add a new item, select the web  form.
+                -make sure the place code in separate  file and select master page is seleected.
+                -click add, and then select the master page masterPage.master.
+                -Add one more item to the web site, add a stylsheet with the name stylesheet.css
+                -with thr masterPage in the Design view drag the stylesheet from the solution Explorer to the masterPage.
+                -This will links the stylesheet to the MasterPage.
+                -if  the masterPage is in the source view; drag the stylesheet to the head section of the HTML.
+                
+                
+                Create the layout
+                ----------------
+                -MasterPage will use the Stylesheet for the layout
+                -the layout used for the web site will be made up of a header , foooter, navigation and content
+                -The masterPage requires the layout  to be set accordingly, add the folloing sections to the HTML of the masterPage between the <form> tag.
+                -Running the web site is done by either pressing F(five) or click the play button.
+                
+                
+                
+                Creating section
+                ----------------
+                -right click the name  of the web site in the solution explorer and create a new folder  called a new folder called img, 
+                -save images there
+                -Click the refresh button in solution explorer to make sure the project is up-to  data.
+                -In the header section section of the HTML, add the demo name for this case and a <asp:Image>tag.
+                -with the image selected  press F4 to display the properties for the control, set the image URL to point the new logo  and the Alternative  Text to display a suitable messaage
+                <div id ="header">
+                Demo Class
+                <asp:Image  ID ="Image1" runat="server" imageUrl="img/logo.jpg" alternativeText="Demo"/>
+                </div>
+                -Set the header of the Stylesheet so that it so that it displays the text of the  header in bold
+                -Also larger than default, also  so the text and image is in the center of the page 
+                    .header{
+                          text-align:center;
+                          font-size:2em;
+                          font-weigth:bold;
+                          }
+                          
+                
+       
+   sample web application 
+   --------------------------
+   online library management system
+   -------------------------
+   -member signup - new user can sign up via this module
+   -member login - signed up user will login in
+   -view books - anyone can view the bookss available
+   -admin login - admin will login via module
+   - book author management - add/ update/delete author details
+   -publish er management  - add/update/delete publish details 
+   -book inventory - add/update/delete book details
+   -book issuing process - issue/return books
+                                     
+                                     
+                                     
+                simple use case diagram 
+                --------------------------
+  everyone              signup 
+                visit ste $ search books
+                
+  members              login
+                update own profil deatails
+                
+                
+                add/update/delete author details 
+                add/update/delete/publish  details          admin/librarian 
+                add/update/delete book Details
+                issue /return books
+                                     
+                                     
+                                     
+                                     
+               libraries(free downloads)
+               ----------------------
+               bootsrap framework
+               fontawesome icons
+               Datatables
+               
