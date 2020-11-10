@@ -12,9 +12,66 @@ and pass information  between them, even after the pages have been closed.
 
 ->Java is a cient side, interpreted, object oriented, high level scripting language.
 
-
-
-
+Lesson one
+----------------
+->computer graphics - Coined in 1960
+                    -william Fetter
+                    -consciously managed and documented technology directed toward communicating 
+                    information  accurately and descriptively.
+                    -takes things  a step further by allowing  users rapid visual feedback from their actions.
+                    -Encompasses anything achieved visually on computers.
+interactive computer graphics 
+------------------------------
+->Sketchpad - developed in 196os
+            - first interactive computer graphics application
+            
+   Application of computer Graphics
+   ---------------------------------
+->Areas that hevy uses are:
+                          Educations
+                          Computer aided design
+                          scientific visualisation
+                          Films
+                          Games
+                          virtual/Augmented reality
+ 
+ Lesson Two
+ -----------------
+ ->Computer graphics is all about math
+ ->We need to understand this maths well in order to be able to understand certain techniques.
+ ->
+ 
+ Basic mathematical concepts
+ ------------------------------
+ ->Points - Given as an order pair(x, y)
+            given as ordered triple (x, y,z)
+ ->lines  - object that has a start point and end point.
+          - in 2d(Xstart, Ystart)(Xend, Yend)
+ ->Vectors - Difference between two points
+           - has direction and length
+           - show how to move from one point to another.
+           - important for transformations
+           -point coordinate are vector quantities, opposed to a single number  a scalar quantity.
+           -Vector between two points:
+                    v=p2-p1(x2-x1, y2-y1)
+           -Vector length
+                     |v| = Squareroot(V2X+V2y)
+           - Vector addition
+                     V1+V2 =(V1x+v2X, V1y+V2y)
+           -Scalar multiplication
+                    Multiple each of the components of the vector by the scalar
+                    sV=(sVx, sVy)
+           -Vector Dot product
+                  sums the products of corresponding elements over a pair of vectors
+                  Vector a = [a1, a2, a3, ...]
+                         b = [b1, b2, b3...]
+                         a.b= a1b1+a2b2+a3b3...]
+                  Enables us to compute the angle θ between two vectors(if we normalise them first)
+                    a.b=|a||b|cosθ
+          -We can computer the square of the magnitude of a vector by taking the dot products of that vector and itself:
+             ==|a|2
+          -Vector Cross product              
+                    
 Lesson six 
 -----------
 ->GRAPICS USING HTML CANVAS
