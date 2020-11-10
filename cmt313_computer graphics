@@ -1,1 +1,80 @@
+INTRODUCTION
+-------------
+->programming language that can be included on out  pages to make them 
+more interactive 
+->used to modify the content  of forms, change images, open new windows and write dynamic page content.
+->used with css to make DHTML(Dynamic hperText makeUp language)
+->this allows you to make parts of your web paes ppear or disappear or move around on the page.
+->It only execte on the pages  that are on your browser  window at any set time.
+->When the user stop viewing that page  , any script that were runnning on it are  immediately stopped.
+->the only exceptions are cookies or various client side storage API, which can be used by many pages to store 
+and pass information  between them, even after the pages have been closed.
 
+->Java is a cient side, interpreted, object oriented, high level scripting language.
+
+
+
+
+Lesson six 
+-----------
+->GRAPICS USING HTML CANVAS
+-----------------------------
+->canvas element is part of html five
+->allows for dynamic, scripable rendering of 2D shapes and bitmap images.
+->consist of a drawable region defined in HTML code height and  width attributes.
+->javascript code may access the area though  a full set of drawing functions similar to those
+of other common @D APIs , thus allowing dynamically generated    graphics.
+->some uses of canvas are building graphics, animations, games and image composition.
+
+
+Understanding the HTML five DOctype
+------------------------------------
+->A document type declaration, or DOCTYPE for short is an instruction to the web browser about 
+the version of markup language in which a web page is written.
+->According the HTML specification  of standard , every  HTML document require a valid document type  declaraion to 
+ensure  that your web pages are displayed the way they aee intended to be displayed.
+->
+
+
+Canvas Elements Size versus Drawing surface size
+---------------------------------------------------
+->canvas have two sizes:
+                  1)the size of the element(canvas) itself 
+                  2)the sixe of the element's drawing surface.
+->Setting the element's width and height attributes sets both of the these sizes;
+->CSS attribute affect only the element's size and not the drawing surface.
+->By difault, both the canvas element's size and the size of its drawing surface is 3000 screen
+pixel wide and one  hundred and fifty screen pixels hight.
+->When a canvas element's size does not match  the size of its drawing surface, the borwser scales the drawing surface to fit the element (which may result in surprising and unwanted effects.
+
+
+
+
+Understanding the Canvas coordinates
+---------------------------------------
+->The canvas is a two-dimensional rectangular area.
+->the coordinate of the top-left corner of the canvas are(0,0) which is known as the origin,
+->The coordinate of the  bottom-right corner are(canvas width, canvas height)
+
+
+Using Javascript to Access the canvas attributes
+----------------------------------------------------
+display and reset the canvas drawing dimension
+------------------------------------------------
+ <!DOCTYPE HTML>
+ <html>
+ <head>
+ <style>
+ #mycanvas{border:3px solid red;}
+ </style>
+ </head>
+ <body>
+ <canvas id ="mycanvas" width="100" height="100"></canvas>
+ <script>
+ var canvas =document.getElementById("mycanvas");
+ //displaying the width and the height
+ alert(canvas.width);
+ alert(canvas.height);
+ //increasing the width and height
+ canvas.width=200;
+ canvas.height=300;
