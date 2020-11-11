@@ -382,5 +382,276 @@ In computer graphics which projection gives a real camera like image.
 The correct answer is: Perspective
 
 
+Lesson Seven
+-------------
+Graphics Using HTML five Canvas
+-----------------------------------
+->Canvas elements - is part of HTML
+                  - allows dynamic, scriptable rendering of 2D shapes and bitmap images
+->Canvas -consist of a drawable region defined in HTML code with height and width attributes
+          -used  to build graphs, animations, games and image composition.
+->javascript code may access the area through a full set of drawing functions
+similar to those of other common 2D APIs, thus allowing for dynamucally generated graphics.
 
 
+
+understanding the HTML five doctype
+-------------------------------------
+->document type declaration(DOCTYPE) - is an instruction to the web browser about the version
+  of markup language in which a web page is written.
+                                     - the first thing defined in an HTML document
+                                     -Not an HTML tage.
+  ->insure that web pages are displayed the way they are intended to be displayed.
+  ->
+
+Canvas  Element size versus Drawing surface Size
+---------------------------------------------------
+->canvas has two sizes:
+        1.the size of the element(canvas) itself 
+        2.the size of the element's drawing surface
+ ->Setting the element width and height attributes sets both of these sizes.
+ ->Css attributes affect only the element's size and not the drawing surface.
+ ->Both by default are 300 screen pixels wide and 10 screen pixel hight.
+ ->Drawing surface remains unchanged at default value if css is used to set the canvas element and draw sixe
+ ->unwanted effect when a canvas element's size does not match the size of its  drawing surface, the browser scales the drawing surface to fit the element.
+ 
+
+
+Understanding the canvas coordinate
+--------------------------------------
+->the canvas is a two-dimensional rectangular area.
+->the coordinate of the top-left corner of the canvas are(0,0) which is known as origin,
+  the coordinate of the bottom-right corner are(canvas width, canvas height)
+
+
+Canvas color gradients
+---------------------------
+->lineargradients
+->Radialgradiant
+->working with images in Canvas
+->Canvas pattern
+->Canvas text
+->Canvas shadows GlobalApha
+->Canvas Clipping
+
+General discussions
+----------------------
+->Gradient - in the context of the canvas consist of continuously smooth color transitions
+  along a vector from one color to another, 
+  possibly following by additional transitions along the same vector to other colors.
+           -Used anywhere in images, normally as a background element.
+           -llow designer to expore new opportunities to provide fresh, clean designs for audience.
+           -They are of two types:
+                         Linear gradient
+                         Radial Gradient
+           -Transitions in linear gradients occurs along a straigh line  between two points inclined to an angle or a direction.
+           -Created with the use of 
+            createLinearGradient() method.
+           -Defined by imaginery  line which defines the direction of the gradient.
+           -Once created we can insert  color using the 
+            addColorstop() method
+           -It accepts as arguments a floating point value between 0.0 and 1.0.
+           -
+                         <script>
+                         var canvas=document.getElementById('myCanvas');
+                         var context=canvas.getContext('2d');
+                         //a rectangle covering entire canvas
+                         context.rect(0,0, canvas.width, canvas.height);
+                         //add linear gradient(rectangular region)
+                         var grd = context.createLinearGradient(0,0,canvas.width, canvas.height);
+                         //light blue
+                         grd.addColorStop(0, '#8ED3FF');
+                         //dark blue
+                         grd.addColorStop(1, #004CB3');
+                         //use the gradient
+                         context.fillstyle=grd;
+                         context.fill();
+                         </script>
+
+
+Specifying  a color stop with an RGBa() color value which includes degrees of transparency
+---------------------------------------------------------------------------------------
+                    <script>
+                    var canvas=document.getElementById('DemoCanvas');
+                    if (canvas.getContext)
+                    {
+                    vr ctx = canvas.getContext("2d");
+                    
+                    var gadient1 = ctx.createLinearGradient(0,0, 50, 0);
+                    gradient1.addColorStop(0,'red');
+                    gradient1.addColorStop(1, 'rgba(0,0,244,0.4)');
+                    ctx.fillStyle = gradient1;
+                    ctx.fillRect(0,0,75, 75);
+                    
+                    var gradient2=ctx.createLinearGradient(0, 0, 50, 0);
+                    gradient2.addColorStrop(0, 'red');
+                    gradient2.addColorStop(1, 'rgba(0,0,255,0.5)');
+                    ctx.fillStyle = gradient2;
+                    ctx.fillRect(75, 0, 75, 75);
+                    
+                    var gradient3= ctx.createLinearGradient(150, 0, 200, 50);
+                    gradient3.addColorStop(0, 'red');
+                    gradient3.addColorStop(1, 'rgba(0,0,255, 0.5)');
+                    ctx.fillStyle= gradient3;
+                    ctx.fillRect(150, 0, 75, 75);
+                    
+                    var gradient4= ctx.createLinearGradient(275, 50, 225, 0);
+                    gradient4.addColorStop(0, 'red');
+                    gradient4.addColorStop(1, 'rgba(0, 0, 255, 0.5)');
+                    ctx.fillStyle = gradient4;
+                    ctx.fillRect(255, 0, 75, 75);
+                    }
+                    </stript>
+                
+
+Generating s rainbow colours
+--------------------------------
+               context.rect(0,0,canvas,width, canvas,height);
+               var grd = context.createLinearGradient(0,0,canvas.width, canvas.height);
+               grd.addColorStop(0.14, '#FF0000');
+               grd.addColorStop(0.28, '#FF7F00');
+               grd.addColorStop(0.42, '#FFFF00');
+               grd.addColorStop(0.57, '#00FF00');
+               grd.addColorStop(0.71, '#0000FF');
+               grd.addColorStop(0.85, '#4B0082');
+               grd.addColorStop(1.0,'#8F00FF');
+               context.fillStyle = grd;
+               context.fill();
+               
+               
+         
+         
+         Radial Gradient
+         ---------------------
+ ->Define a color change along a clone(a three-dimensional geomeric shape) beween two circles.
+ ->created by 
+          createRadialGradient() method  
+          and passing in two circles and also providing source destination circle radius
+          
+          
+          <sctipt>
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext('2d');
+          context.rect(0,0, canvas,width, canvas.height);
+          
+          //Create radial gradient
+          var grd = contex.createRadialGradient(238,50, 10, 238, 50, 300);
+          
+          //light blue
+          grd.addColorStop(0, '#8ED7FF');
+          
+          //dark blue
+          grd.addColorStop(1, '#004CB3');
+          
+          context.fillSyle = grd;
+          context.fill();
+          context.srokeStyle = '#0000ff';
+          context.lineCap = 'square';
+          context.stoke();
+          </script>
+          
+->Canvas radial gradient are defined with two imaginary circles.
+->a starting circle and an ending circle, in which the gradient(transition) start
+with  the start circle and moves towards the end circle.
+               
+               
+      
+      
+      Canvas Pattern
+      --------------------
+->pattern - used to fill  or stroke  an object using a pre-defined graphic object
+            which can be replaced (tiled) at fixed intervals in x and y to cover the area to be painted.
+          -consist of an image source - JPG, GIF, SVG, or the currently playing frame of a vedeo.
+          -Created by 
+                  createPattern() method, 
+                  passing in the image object and a repeat parameters.
+                  (returns a pattern object)
+                  
+                  
+                  <body>
+                  <canvas id="myCanvas" width="578" height="200"></canvas>
+                  <script>
+                  var canvas=document.getElementById('mycanvas');
+                  var context=canvas.getContext('2d');
+                  var imageObj=new image();
+                  imageObj.onload=function(){
+                  var pattern=context.createPattern(imageObj,'repeat');
+                  context.rect(0,0,canvas.width, canvas.height);
+                  context.fillStyle=pattern;//set fillStyle property to the pattern object
+                  context.fill();//fill the shape using fill()
+                  };
+                  imageObj.scr='myimage.png';
+                  </script>
+                  </body>
+                  </html>
+                  
+                 
+                  
+                  Loding two images-pattern making them nto patterns tha are used to stroke a line and fill a rectangle
+                  ------------------------------------------------------------------------------------------------------
+                  
+                                 <canvas id="mycanvas" width="500" hheight="500"></canvas>
+                                 <script>
+                                 var canvas=document.getElementById("myCanvas");
+                                 if (canvas.getContext){
+                                 var ctx=canvas.getContext("2d");
+                                 //create new image object to use as pattern 
+                                 var image1 = new Image();
+                                 var image2 = new Image();
+                                 
+                                 image1.src = 'pattern1.png';
+                                 image2.src = 'pattern3.png';
+                                 
+                                 var pat1 = ctx.createPattern(image1, "repeat");
+                                 var pat2 = ctx.createPattern(image2, "repeat");
+                                 ctx.lineWidth = 4;
+                                 
+                                 //stroke line and fill rect with block pattern 
+                                 ctx.beginPath();
+                                 ctx.moveTop(50, 10);
+                                 ctx.lineTo(150, 10);
+                                 ctx.strokeStyle = pat1;
+                                 ctx.stroke();
+                                 ctx.fillStyle = pat1;
+                                 ctx.fillRect(50, 20, 100, 150);
+                                 
+                                 //stroke line and fill rect with cork pattern
+                                 ctx.beginPath();
+                                 ctx.moveTo(200, 10);
+                                 ctx.lineTo(300, 10);
+                                 ctx.strokeStyle = pat2;
+                                 ctx.stroke();
+                                 ctx.fillStyle = pat2;
+                                 ctx.fillRect(200, 20, 100, 150);
+                                 }
+                                 </script>
+                                 
+                                 
+                                 
+                               Working with canvas image
+                               ------------------------------
+ ->we can draw an image on canvas using 
+          drawImage() method
+ ->The method requires an image object  and destination point
+ ->The destination point defines the top left corner of the image  relative to the top left corner.
+  of the canvas.
+  ->With the canvas image, you can 
+                  set the image size
+                  crop an image
+ 
+ 
+       //drawImage() method require an image object
+       //create an image and wait for it to lod before instantiating drawImage()
+       //accomplish by using the onload property of the image object
+       <script>
+       var canvas=document.getElementBy
+                                 
+                                 
+                                 
+                                 
+                  
+               
+               
+               
+               
+               
