@@ -1,1 +1,33 @@
-
+iNTRODUCTION TO SOFTWARE eNGINEERING
+--------------------------------------
+Course outline 
+------------------
+->Introduction and background 
+      -Software and its evolving  roles
+      -Software Quality 
+      -software myths
+->The software process
+      -Engineering in software 
+      -process frameworks and patterns
+      -overviews of process models and technology
+      -overview of SE practices
+->SE practice 1: system Engineering
+     -Reverse Engineering
+     -A look ahead at OO and SOA techniques
+->SE Practice 11: Requirements Engineerin and the analysis Model
+     -formal methods
+     -Clean-room SE
+     -Components Based Development
+     -commercial Off-The-Shelf(COTS) development
+->SE practice III :Design Engineering and the architectural artefacts
+                  -Design models, 
+                  -System architectural designs
+                  -Database schemas
+->SE practical IV: User interface Design
+               -General User Interface Designs
+->Software Engineering - the systematic application of engineering 
+                         approached/techniques to the development of software.
+                       - Engineering branch associated with development of software products
+                         using well-defined scientific principles, methods and procedures.
+                       - Results into efficient and reliable software products(high quality software products)
+                       
