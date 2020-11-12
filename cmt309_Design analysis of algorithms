@@ -134,3 +134,183 @@ Select one:
 
 https://www.sanfoundry.com/fractional-knapsack-problem-multiple-choice-questions-answers-mcqs/
 
+
+
+Chapter 4
+-----------
+Binary search tree(BST)
+-------------------------
+->Hierarchical data structure with a single pointer to root node.
+->Each node has at most two nodes(left and right)
+->Each node is ordered by some key data field(s)
+->For every node in the tree, its key is greater than its left  child's key and less than its right child's key.
+
+
+Some BST Terminology
+--------------------
+->the root node is the top node in the hierarchy
+->A child node has exactly one parent node, 
+->A parent node has at most two child nodes, sibling nodes share the same parent node
+->Every node in the BST is a subtree of the BST rooted at that node.
+
+
+implementing a search tree
+--------------------------
+       struct_bst_node {
+             int data;
+             struct bst_node *left;
+             struct bst_node * right;
+             };
+             typedef struct bst_node ;
+
+
+->left hold the address of the left child.
+->Right  holds the address of the left child
+ ->all BST nodes can be accessed through root pointer b traversing left and right bst_node pointer
+
+
+OPerations on BST
+---------------------------
+->Natural recursive
+ .Each node in the BST is itself a BST
+->Some operations:
+      -create a BST
+      -find node in BST using its key field
+      -add a node to the BST
+      -Traverse the BST
+       vist all the nodes in some order
+
+ 
+ Creating a BST
+ ------------------
+    /* a function that creates, initialize, and returns  a new bst_node
+    bst_node *createANode(int val){
+    bst_node *newnode;
+    
+    newnode = malloc(sizeof(bst_node);
+    if (newnode == NULL){
+    return Null;
+    }
+    
+    newnode->data = val;
+    newnode->right = newnode -> left = null;
+    return newnode;
+    }
+    bst_node *root = NULL;// an empty BST
+    root = CreateANode(35);// a BST w/one node
+    if(root != NULL){  //add the left child
+    root-> left = CreateANode(22);
+    
+    
+    Finding a Node into the BST
+    ----------------------------
+    -Use  the search key to direct a recursive binary
+    -search for a matching node
+      .start at the root node as current node
+      .if the search keys' value matches the current node's key then found a match
+      .if search key's value is greater than current node's 
+               .if the current node has a right  child, search right
+               .Else, no matching node in the tree
+      .If search key is less than the current node's 
+               .If the current node has a left child, search  left
+               .Else, no matching node in the tree
+     
+
+
+  Example: Search for 45 in the tree
+  -------------------------------------
+  ->Start at the root, 45 is greater than 25, search in right subtree
+  ->45 is less than 50, search in 50's left subtree
+  ->45 is greater than 35, search is 35's right subtree
+  ->45 is greater  than 44, but 44 has no  right subtree so 45 is not in the BST
+
+
+Insert Node into the BST
+--------------------------------
+->Always insert new node as leaf node
+->Start at root node as current node
+->if new node's key > current's key 
+    .If current node has a left child, search left
+    .Else add new node as current's left child
+
+
+Example: insert 60 in the tree
+------------------------------------------
+->Start at the root,  60 is greater than 25, search in right subtree
+->60 is greater than 50, search in 50's right subtree
+->60  is less than 70, search in 70's left subtree
+->60 is less than 66, add 60 as 66 left child
+
+
+
+
+
+Traversals
+--------------------
+-Visit ever node in the tree and perform some operation on it
+    (ex) print out  the data field of each node
+-Three steps to a traversal 
+    .visit the current node
+    .Traverse its left subtree
+    .Traverse its right subtree
+-The order in which you perform these steps results  in different traversal orders:
+     .Pre-order traversal :(1)(2)(3)
+     .In-order traversal (2)(1)(3)
+     post-order traversal: (2) (3) (1)
+
+
+
+Traversal Code
+-------------------
+/*recurse version of in-order traversal 
+*the iterative version is ugly
+*/
+void InOrder(bst_node *root){
+if(root == NULL){
+return;
+}
+InOrder(root->left);//traverse left subtree
+Visit(root);
+InOrder(root->right);
+}
+//in main: a call to InOrder passing root
+InOrder(root);
+//The call stack after the first few
+//recursive calls to InOrder(root->left)
+
+
+
+Traveral Examples
+---------------------
+->InOrder(root) visits nodes in the following order:
+  4,10,12,15,18,22,24,25,31,35,44,50,66,70,90...
+->A pre-order traversal visits nodes  in the following order;
+ 25,15,10,4,12,22,18,24,50,35,31,44,70,66,90
+ ->A post-order traversal visits nodes in the following order:
+  4,12,18,24,22,15,31,44,35,66,90,70,50,25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
