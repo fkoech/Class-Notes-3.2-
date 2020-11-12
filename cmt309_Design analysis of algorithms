@@ -138,6 +138,66 @@ https://www.sanfoundry.com/fractional-knapsack-problem-multiple-choice-questions
 
 Chapter 4
 -----------
+Matrix-chain multiplication
+---------------------------------
+->Let A be an n by m matrix, let B be an m by p matrix, 
+ then c=AB is an n by p matrix
+->c=AB can be computed in O(nmp) time, using traditional matrix multiplication.
+->suppose i want to compute A1A2A3A4
+->matrix multiplication is associative, so I can do the 
+ multiplication in several different order
+ 
+ Example:
+ --------
+ A1 is 10 by 100 matrix
+ A2 is 100 by 5 matrix
+ A3 is 5 by 50 matrix
+ a4 is 50 by 1 matrix
+ A1A2A3A4 is a 10 by 1 matrix
+ 
+ ->5 different orderings = 5 different parenthesizations 
+   (A1(A2(A3A4)))
+   ((A1A2)(A3A4))
+   (((A1A2)A3)A4)
+   ((A1(A2A3))A4)
+   (A1((A2A3)A4))
+ ->Each paranthesization is a different number of mults
+ let A ij = A i · · · A j
+ 
+ 
+ Example
+ -------------
+ ->A1 is 10 by 100 matrix, 
+ ->A2 is 100 b 5 matrix ,
+ ->A3 is by 50 matrix, 
+ ->A4 is 50 matrix
+ ->A1A2A3A4 is a 10 by 1 matrix
+ -(A1(A2(A3A4)
+   A34 = A3A4, 250 mults, result is 5 by 1
+   A24=A2A34, 500 mults, result is 100 by 1
+   A14
+   
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Binary search tree(BST)
 -------------------------
 ->Hierarchical data structure with a single pointer to root node.
@@ -291,13 +351,76 @@ Traveral Examples
 
 
 
+Balance search tree
+--------------------------
+->A search-tree data structure for which  a height of O(lg n) is 
+  guaranted when implementing a dynamic set of n items.
+   Examples:
+    AVL trees
+    2-3 trees
+    2-3.4 trees
+    B-trees
+
+    Red-black trees
+    Height of a red-black tree
+    Rotations
+    insertion
+
+Red-black properties
+----------------------
+->Every node is either red or black.
+->The root and leave(NIL's) are black.
+->If a node is red, then its parent is black.
+->All simple path from any node x to a descendant
+leaf have the same number of back nodes = black-heigh(x)
 
 
+Height of a red-black tree
+----------------------------
+->Theorem. A red-black tree with  n keys has height h ≤ 2 lg(n + 1)
+->Merge red noddes into  their back parents 
+  this process produces a tree in which each node has 2,3,  or 4 children.
+  the 2-3-4 tree has uniform depth h' of leaves.
+->We have h' ≥ h/2 since at most half the leave on an path are red.
+->The number of leaves in each tree is 
+   n+1
+   n+1 ≥ 2 h'
+   lg(n+1)≥ h' ≥ h/2
+   h ≤ 2 lg(n + 1)
+ 
+ 
+ Query operations 
+ -------------------
+ -Corallary - the queries search, MIN, MAX, SUCCESSOR, and PREDECESSOR all run in 
+O(lg n) time on a red-black  tree with n nodes.
 
 
+Modifying operations
+--------------------
+->The operations INSERT and DELETE cause modification to the red-black tree:
+  the operation itself, 
+  color changes
+  restructuring the links of the tree via "rotations"
+  
+->Rotations maintains the inorder  of keys:
+ a ∈ α, b ∈ β, c ∈ γ ⇒ a ≤ A ≤ b ≤ B ≤ c.
+ ->A rotation can be performed in o(1) times
 
 
-
+insertion into a red-black tree
+-----------------------------------
+->insert x in tree.
+ color x red
+ only red-black property 3 might be violated 
+ move the violation up the tree by recoloring unit it can 
+ be fixed with rotations and recoloring 
+ 
+ Example
+ ---------
+ Insert x = 15
+ recolor, moving the violation up the tree.
+ Right-rotate(18) 
+ LEFT-ROTATE(7) and recolor.
 
 
 
