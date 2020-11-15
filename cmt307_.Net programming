@@ -745,3 +745,66 @@ Type Casting
                fontawesome icons
                Datatables
                
+
+
+CHAPTER 5
+----------------
+->I should be familiar at the end  of this chapter:
+        understand  about the ASP.NET web controls.
+        
+        
+        Common page events
+        ----------------------
+->Init - occurs when page is being initialized .
+->preload - occurs before the load of the page
+->Load - occurs after the page has been initialized and rendered, is fired
+ when the page is loaded.
+ After the controls have beeb loaded onto the page.
+ ->Prerender - Used to alter the content of the page or the controls.
+ ->Uload - Occurs when the page is closed or moved away from the page(Destroyed)
+ 
+       Common control events
+       ---------------------
+->databinding - occurs when data is bound to the control (not all controls are able to have
+data bound to them)
+->
+
+
+Label
+---------
+->A label control is used to display text on the web page.
+->Its often used when displaying localized information (Information that is 
+  specific to the language/culture of the used or browser)
+ ->Sample code :
+    <asp:label ID="lblabel1" runat="server" Text=this is the label"></asp:Label>
+    
+ Useful properties
+ -------------------------
+ ->CSSClass - allows for css classes to be assignment to the
+  label control from the attached stylesheeet.
+ ->Text - Sets the value for the text to be displayed in the label.
+        - It is often used programmatically to change the text in the La
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
