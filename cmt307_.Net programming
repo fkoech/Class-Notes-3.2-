@@ -784,7 +784,299 @@ Label
   label control from the attached stylesheeet.
  ->Text - Sets the value for the text to be displayed in the label.
         - It is often used programmatically to change the text in the La
+        Label1.Text="Iam a label"
+        
+        
+     Main Events
+     -------------
+ ->As the Label is only used to display information there are no specific events.
+ ->The main events are still available.
+ ->The labels is rendered as a <span> HTML  tag.
+ ->
+ 
+ 
+ Exercise 
+ --------
+ Adding the current Date
+ ---------------------------
+ ->One of the element in the navigation section is the current Date, place a 
+ ALbel b dragging a control in the list<ul>
+ ->The label should  have the ID 'lbIDate'
+          <li>
+          <asp:Label ID ="lbDate" runat="server"></asp:Label>
+          </li>
+          
+->With the MasterPage in Design view, double click on the page to create the page_load event.
+->Setting label LbDate to display the current date
+          lbiDate.Text=DateTime.Now.ToLongDateString();
 
+
+
+
+      TextBox
+      ---------
+->Used to gather information from the user.
+->To define a variable, we use
+          <asp:TextBox ID="TextBox1" runat="server"></asp:Textbox>
+->The information that is obtained / returned from the text box
+can be accessed programmatically by using the text property such as  
+               myVariabele=textBox1.Text
+
+
+
+
+    Useful properties
+    -----------------
+->CSSClass - allows for css classes to be 
+  assignment to the control from the attached stylesheet
+->TextMode - Allows for the TextBox to be set either as singleLine, where only one line of
+text is entered at a time, multiLine where multiple lines of text can be entered or padssword.
+where the text is replaced with onather character such as a "." where it is entered to hide any text entered.
+
+
+Main Events
+-------------
+->there are no specific events. the main events are still available.
+->the textBox is rendered as a form <input> tag in HTML
+
+
+Hyperlink
+-----------
+->Controls words in the same way as the hyperlink in standard HTML 
+->Can be rendered on the browser using the 
+            <asp:HyperLink ID="HyperLink" runat ="server">HyperLink<asp:HyperLink>
+    
+    
+    Usedful properties
+    ------------------
+->Text -the text  displayed for the hyperlink.
+->NavigateURL - The URL the hyperlink navigates to
+->imageURL - The URL of an Image that can be displayed for use in the HyperLink.
+           - If the text  property is set then the image will not be displayed.
+           
+   Adding hyperlinks in the navigation
+-----------------------------------------
+->the <ul> in the navigation section of the masterPage HTML should contain 
+links to the various  sections of the web site.
+->Replace 'Home' from the <ul>  with a 
+Hyperlink control by dragging the control into the list.
+->The ID of the Hyperlink should  be "InkHome" and the navigateURL to "~/Default.aspx"
+       <li>
+       <asp;HyperLink ID="InkHome" runat="server" navigateURL="~/Default.aspx">
+       Home</asp:HyperLink>
+       </li>
+       
+
+
+
+Image
+--------
+->Used to display an image
+   <asp:Image ID ="image1" runat="server"
+   
+   
+ Useful properties
+ ----------------------
+Buttons 
+------------
+->Used to inform the server when the user wishes to submit information.
+->Can be information that has been entered in a TextBox, a value section from a 
+DropDownBox, a value from a list or a continue button
+             <asp:Button  ID="btnButton1" runat="server" Text="Button"/>
+             
+
+
+TYpe of Button
+-------------
+1-The standard Button
+       By default is grey in color with black text.
+       This creates a click event fot the button to handle programmatically.
+       Some of its full properties:
+            CSSClass - Allows for css classes to be assigned to the control from the 
+                      attached stylesheet.
+                      
+            command Name - Associated with the button,
+                           offten used with the DataList control.
+            PostBackURL - the url to post to when the button is clicked
+                          called before the current page will handle the click event.
+                          
+     Standard click events
+              Click- fired when the button is clicked.
+                     Handled if the postBackURL propert is set.
+              The Button is rendered as <input> tag in HTML.
+              The are addition javascript that is used to handle Button event.
+           
+2- The LinkButton 
+              Appears to be a standard hyperlink in appearance.
+              able to handle the click event
+              some of its full properties.
+                  CSSClass - allows for css to be assigned to the control from the
+                            attached stylesheet.
+                 CommandName - The command that is associated with the button,
+                              Used with datalink control.
+                              
+                PostBackURL - The url to post to when the Button is clicked, it should be 
+                             noted  that this URL is called before the current page will handle 
+                             the click event.
+               Click - Fired when the button is clicked.
+                       This event  will not be handled if the postBackURL property is set.
+                       button is rendered as <a> tag in HTML.
+                       
+3- The ImageButton 
+           Appears to be as a standard image in appearance.
+           Able to handle click event
+           Useful properties:
+                    CSSClass - Allows for css classes to be assigment to the control 
+                               from the attached stylesheet.
+                   commandName - The command that is associated with the button,
+                                 often used with the  DataList control
+                  PostBackURL - posted when the button is clicked
+                                should be called before the current Page will handle the clickEVent.
+                                
+                  imageURL - The Url to the image to be displayed.
+                  onClientCLick - the client-side code that is executed when the button is clicked.
+                                  Ie it maybe a javascript confirm button.
+                                 Useful main events
+                                           click - fired when the button is clicked.
+                                                   Will not be handled if the postBackURL property is set.
+                                 The Button is rendered as a <input> tag in HTML.
+                                 the additional javascript to handle the button.
+                                 
+                   
+Excercise
+------------
+Create an image slideshow
+-------------------------
+->Created on the main page(Default.aspx).
+->download images
+->Open the default.aspx page that was created earlier.
+->Place the button, an image followed by another Button.ID the firstbutton "btnPre"
+with the text 'previous' with the second button id.
+->"btnNext" with the text "Next".
+->With an image in between the two button with the ID "imgShow" and set the imageURL to the first image
+->double click on the "next" button(bntNext) to create the click event for the button
+->Should look like:
+           protected void btnNext_Click(object sender, EventArgs e){
+           }
+->When the next button is clicked the next image in the squence should be displayed, 
+->This can be done by checking the current image's  imageUrl and displaying the next image.
+     protected void bntNext_Click(object sender, EventArgs e){
+     {
+     if(imgShow.ImageUrl=="~/images/1.jpg")
+      {
+      imageShow.imageUrl="~/images/2.jpg";
+      }
+      else if (imageShow.imageUrl =="~/images/2.jpg")
+      {
+      imageShow.imageUrl = "~/images/3.jpg";
+      }
+      else if (imageShow.imageurl == "~/images/3.jpg")
+      {
+      imageShow.imageUrl ="~/images/4.jpg";
+      }}
+->running the site you should find that when the next button is 
+  clicked the image will display in sequence.
+
+      
+
+Exercise
+--------
+Expanding the slideshow
+------------------------------
+->shows the images when the next button is clicked, 
+->add code to the previous button so that the image are shown  in the reverse.
+->Currently when the next or previous button are continually pressed it is possible to only display the limited number of images,
+->add to the code to allow for a loop of images.
+
+RadioButton
+-------------
+->RadioButton control is used to display an individual RadioButton 
+        <asp:RadioButton ID="RadioButton1" runat="server"/>
+->It has two main parts to it, the text that is displayed as part of the radioButton.
+->And the part is the value which is returned when the radioButton is selected.
+
+Useful properties
+------------------
+->CSSClass - allows for css classes to be 
+             assignment to the control from the attached stylesheet.
+->main Events
+          checkedChanged - fired if the RadioButton is checked or unchecked.
+          The Radiobutton is rendered as a <input> tag in HTML.
+->RadioButtonList
+         -Display multiple radioButtons in a group.
+         -one within a group can only be selected using 
+                 <asp:RadioButtonList ID="RadioButtonList1:" runat="server">b</asp:RadioButtonList>
+
+Useful properties
+------------------
+->CSS - allows for css classes to be assigned to the control from the attached stylesheet.
+->items - this allows items to be added to the radioButtonList. 
+          Used in programmatically to add/remove items from the group.
+->RepeatDirection - Allows for  the changing from a vertical list to horizontal list, 
+                  - Used in conjuction with repatcolumns to display multiple columns.
+->repeatColumns - allows for multiple columns to be displayed 
+                  following images shows the same list as above with repeateDirection set to Horizontal
+                  and repeateColumns set to 2
+                       ..(Dots for this case to represents the images)
+                       .
+->DataSourceID - The Id of the Database Data source control.
+                 This should be set programmiatically.
+->DataTextField - Sets the field used to display the label for each radioButton.
+->DataTextField - Sets the field used to display the label for each RadioButton.
+-DataValueField - Sets the fields used to display the value for each RadioButton.
+
+
+Main Events
+--------------
+->CheckedChanged - fired if the RadioButton is checked or unchacked.
+->RadioButtonList can be assigned to a datatable programmatically using these properties 
+to display data from a database.
+        RadioButtonList.DataSource = table;
+        RadioButtonList.DataTextField = "name";
+        RadipButtonList.DataVaueField = "id";
+        RadioButtonList.DataBind();
+->The RadioButtonList is rendered as a <input> tag in HTML.
+->When repeatDirection is set to horizontal then the radioButtonList is displayed within
+ a <table>
+ 
+ 
+ CheckBox
+ ----------
+ -Checkbox is used to display an indidual checkbox.
+ -Used to select multiplr values; often used for the selection of multiple options.
+        <asp:CheckBox ID="CheckBox1" runat="server" text="i am a checkbox"/>
+ -Useful properties
+   CSSClass - allows for css classes to be assignment to the control 
+   from the attached stylesheet.
+   Checked - Sets if the checkBox is checked by default.
+   
+  Main Events
+  ------------
+  ->CheckChanged - fired if the radioButton is checked or unchecked.
+  ->the checkBox is rendered as a <input> tag in  HTML.
+  
+  CheckBoxList
+  -------------
+  ->Used to display multiple checkboxes.
+  ->Select multiple checkbox
+         <asp:CheckBoxList ID ="checkBoxList" runat="server'></asp:CheckBox>
+  ->By difault is displayed vertically
+             .
+             .
+             .
+   
+   useful properties
+   --------------------
+   ->CSSClass - allows for css classes to be assignment to the control from the attached 
+   stylesheet.
+   ->Items - This allows items to be added to the RadioButtonList.
+           - This property may be used programmatically to add/remove items from group.
+           
+   
+
+
+
+          
 
 
 
