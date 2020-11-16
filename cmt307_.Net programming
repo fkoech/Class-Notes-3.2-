@@ -1071,7 +1071,12 @@ to display data from a database.
    stylesheet.
    ->Items - This allows items to be added to the RadioButtonList.
            - This property may be used programmatically to add/remove items from group.
-           
+   -->RepeatDirection - allows for the changing from a vertical  list to a Horizontal List,
+                      - Used in conjuction with repeatColumns to display multiple columns.
+                      
+                      
+  ->RepeatColumns - allows  for multiple columns to be displayed.
+                  - following  images shows the  same list as 
    
 
 
