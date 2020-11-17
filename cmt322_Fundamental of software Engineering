@@ -1,4 +1,4 @@
-iNTRODUCTION TO SOFTWARE eNGINEERING
+INTRODUCTION TO SOFTWARE eNGINEERING
 --------------------------------------
 Course outline 
 ------------------
@@ -75,15 +75,62 @@ software process description
             
         Plan-driven and agile process
         ---------------------------------
- -Processes where all of the process activities are planned in advance and process 
-  in 
+ -Processes where all of the process activities are planned in advance and
+ progress is measure against this plan.
+ -In agile processes, planning is incremental and it is easier  to change 
+ the process to reflect changing customer requirement.
+ -In practical, most practical processes
+  include element of both plan-driven and agile approach.
+ -There are no right or wrong software processes.
+ 
 
 
+Software process models
+--------------------------
+-The waterfall model
+ plan-driven model. Separate and distint phases of specification and development.
+-Incremental developmentand
+ specification, development validation are interleaved.
+ may be plan-driven or agile.
+-Reuse-oriented software engineering
+ The system is assembled from existing component.
+ may be plan driven or agile
+ 
+ 
+ 
+
+Agile Methods and software maintenance
+----------------------------------------
+-Most organisation spend more on maintaining existing 
+software than do on new software development.
+-So if agile methods are to be successful, they have to
+support maintence as well as organisation development.
+-systems developed using  an agile approach mainatenance,
+given the emphasis in the development process of minimizing formal documentions
+-Can agile methods be used effectively for evolving a system in 
+response to customer change request
 
 
+Techical, human, organisation issues
+--------------------------------------------
+-Are the cultural or organisational issuesthat may affect the system development
+-Traditional engineering  organisation 
 
 
-
+Extreme programming(XP)
+---------------------
+-Perhaps the best-known and most used agile method.
+-takes an extreme approach to iterative development.
+-principle or practice
+               -incremental planning
+               -pair programming
+               -collective ownerdship
+               -continuous integration
+               -sustainable base.
+               
+Testing in XP
+-------------------
+-Central to XP and XP hasdeveloped an approach.
 
 
 
