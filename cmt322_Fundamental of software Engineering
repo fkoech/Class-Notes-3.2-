@@ -31,3 +31,73 @@ Course outline
                          using well-defined scientific principles, methods and procedures.
                        - Results into efficient and reliable software products(high quality software products)
                        
+                       
+                       
+    Chapter 2 
+    ------------
+    software Process(SP)
+    -------------------------
+    -software process models
+    -process activities
+    -plan-driven vs agile process 
+    -Requirement Engineering
+    -Design activities
+    -Software Testing
+    -Software Evolution
+    
+ -A structure set of activities required to develop a software system.
+ -Different software process
+                    Specification - defines what system should do.
+                    Design and implementation - define the organization of the
+                                               system and implementing the system
+                    validation - checks that it does what the customer wants.
+                  EVolution - changing  the system in response to changing  customer needs.
+ -An abstract representation of a process.
+ -It presents a description of a process from some particular perspective.
+                       
+
+
+
+software process description
+---------------------------------
+-Talks about the activities such as 
+                 specifying a data  model,
+                 designing a user interface
+                 ordering of activities.
+-Also include:
+            Products, which are the outcomes of a process activity
+            Roles, which reflect the responsibilities of the people in the process.
+            Pre-and post-condition -Which are statement that are true before and after a process
+            activity has been enacted or product produced.
+            
+            
+            
+            
+        Plan-driven and agile process
+        ---------------------------------
+ -Processes where all of the process activities are planned in advance and process 
+  in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       
