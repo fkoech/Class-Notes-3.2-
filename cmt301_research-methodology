@@ -52,10 +52,221 @@
                                      a construct associated with the concept of anxiety.
                                      emotional respinses.
               Variables - signifies a more concrete level and are narrow in their definitions
-                          is more specific and   is measurable.
+                        - is more specific and   is measurable.
+                        - 
              
-            conceptual framework - consist od cencepts that are placed within a logical and sequential design.
-                                 - represents a less formal structure and  and used for studies in which existing theory is inapplicable or iss
+            conceptual framework - consist od concepts that are placed within a logical and sequential design.
+                                 - represents a less formal structure and  and used for studies in which existing theory is inapplicable or is inapplicable or insufficient.
+                                 - based on  specific concepts and propositions
+                                 -Derived from empirical observation and intuition.
+                                 -May deduce theories from a  conceptual framework.
+Purpose of conceptual Frameworks
+                                 - To clarify concept and purpose relationships among the concepts in a study.
+                                 -To provide a concept for interpreting the  study findings.
+                                 -to explain observations
+                                 -To encourage theory development that is useful to practice.
+                                 
+                                 
+      Theorical Framework
+      --------------------
+-The theory provides a point of focus for attacking the unknown in a specific area.
+-If a relationship is found between two or more vairable a theory should be formulated to explain why the relationship exists.
+-Theories are purposely created and formulated, never discovered, they can be tested but never proven.
+-Theory - explanation of a phenomenon or an abstract generalization that systematicaly explain the relationships among given phenomena, for purposes of explaining, 
+predicting  and controlling such phenomena.
+-The explanation concerns the relationship between two or more variables or phenomena.
+-More formal and used for studies based on existing theories.
+-Derived from  specific concepts and propositions that are induced or deduced.
+
+
+
+Importance of theory in research
+----------------------------------
+-It identifies the starting point of the research problem and to
+ establish the vision to which the problems is directed.
+-It determines and defines the focus and goal of the research problem.
+
+Key terms  to understand
+------------------------
+-Conceptualization - The process of forming basic ideas, designs, 
+                   plans or strategies based on given facts, situations and examples.
+-Propositions - A statement or assertion of the relationship between concepts 
+               derived from theories or generalizations based on empirical data.
+               
+               
+               Purposes of theoretical Framework
+               -----------------------------------
+ -To test theories
+ -to make research findings meanings and generalizable
+ -To predict and control situations
+ -To similate research.
+ 
+               Purpose of theories and conceptual Models
+               --------------------------------------------
+ -The overall purpose  is to make research findings meaningful and generalizable.
+ -Help to simulate research and the extension of knowledge  by providing both direction and impetus.
+ 
+ 
+ -Theoretical  framework and conceptual frameworks may be represented as models.
+ -A model - is a symbolic representation that helps the researcher to express abstract concepts and relations easily, using minimal words.
+          - can be represented schematically or mathematically.
+ -schematic model - conveys concept and propositions through the use of boxes, arrows or other symbols.
+ -Mathematical or statistical model - convey concepts and propositions through the use of letters, numbers and mathematcal symbols.
+ 
+ 
+ conceptual paradigm
+ ----------------------
+ -A diagram that visually represents and interprets the underlying  theory, principles and concepts of a research.
+ -A visual presentation of variables that interrelate  with one another as perceived by the researcher
+  before an actual empirical investigation is done to prove its relationships.
+
+
+ system analysis and Design - overviews
+ ----------------------------------------
+ -System development is systematic process which includes phases such as
+                                       planning
+                                       analysis
+                                       Design
+                                       deployment
+                                       maintenance
+                                       
+System Analysis
+--------------------
+-Process of collecting and interpreting facts, identifying the problems, and decompositions of a system into
+ its components.
+-System analysis is conducted for the purpose of studying a system or its parts in order
+ to identify its objectives.
+- It is a problem solving technique that improves the systems and ensures that al the 
+  components of the systems work efficient to accomplish their purpose.
+- Analysis specifies what the system should do.
+
+
+Systems design
+-----------------
+-A process of planning a new business system or replacing an existing system by
+ defining its components or modules to satisfy the specific requirement.
+-Before planning, you need to understand the old system thorough and determine how computers can best be used
+ in order to operate effeciently.
+-Focus on how to accomplish the objective of the system.
+-Both design and analysis focuses on 
+                system
+                process
+                Technology
+  
+  
+  
+  
+  What is a system
+  -------------------
+  -Derived from greek word systema
+  -organized relationship between any set of components to achieve some commpon cause or objective.
+  -Orderly grouping of interdependent components linked together according to a plan to achieve a specific goal.
+  
+  Constraints of a systems
+  -----------------------
+  -A systems must have three basic constraints
+    -Must have some structure and behavior which is designed to achieve a predefined object.
+    -interconnectivity and interdependence must exist among the systems components.
+    -The objectives of the oroganization have a high priority than the objectives of its subsystems.
+    
+    properties of a systems
+    ---------------------------
+ -Organization
+     -implies structure and order.
+     -It is the arrangement of component that helps to achieve predetermined objectives.
+ -interaction
+      -Defined by the manner in which the components operate with each other.
+      -I.e an organization, purchasing deparment must interact with production  department and payroll with personnel department.
+ -Interdependence
+      -Means how the components of a system depend on one another.
+      -For proper functioning, the components are coordinated and linked together according to a specified plan.
+      -The output of one subsystem is the requirement by other subsystem as input
+ -Integration
+       -concerned with how a system components are connected together.
+       - Meaning the parts of the system work together within system even if each part perform  a unique function.
+-Central objective
+       -the objective of a system must be cental 
+       -it may be real or stated
+       -It is not uncommon for an organisation to state an objective and operate to achieve another.
+       -the user must know the main objective of a computer application early in the analysis for a successful design and conversion.
+       
+       
+ Elements of a systems 
+ ------------------------------
+ inputs
+ processor
+ output
+ feedback
+ 
+ Output and inputs
+ ----------------------
+ -The main aim of a system is to produce an output which is useful for its users.
+ -Inputs are the information that enters into the  system for processing.
+ -output is the outcome of processing
+ 
+ Processor(S)
+ ------------------
+ -Is the element of a system that involves the actual transformation of input into output.
+ -It is the operational component of a system.
+ -Modifies the input either totally or partially, depending  on the output specification.
+ 
+ 
+ controls
+ ----------
+ -Guides the system
+ -It is the decision-making subsystem that controls the pattern of activies governing input, processing and output.
+ -Operating system and software - control the behavior of a computer system.
+ 
+ 
+ Feedback
+ --------------
+ -Provides the control in a dynamic system.
+ -Positive feedback is routine in nature that encourages the performance of a the systems.
+ -Negative feedback is informational in nature that provides the controller with information for action.
+ 
+Environment
+-----------
+ -is the Supersystem within which an organisation operates
+ -It is the source of eternal elements that strike on the systems
+ -It determines how a system must function.
+ 
+bounderies and interfaces
+-------------------------
+-A system  should be defined by itd bounderires.
+-bounderies - are the limits that identify its components, processes, and interrelationships when it interfaces with another system.
+-Each system has bounderies that determines  its  sphere of influence and control.
+-the knowledge of the bounderies of a given systems is cruial in determining the nature of its interface with other systems for successful design.
+
+Types of systems
+--------------------
+a)Physical or abstract systems
+----------------------------
+-physical systems - are tangible enties.
+                    can be touched and felt
+                    can be static or dynamic in nature.
+                    dynamic(can change acccording to the users needs)
+                    
+ -Abstract systems - non-physical entities or conceptuals
+                     may be formulas representation or models of  a real systems
+                     
+ b)Open or closed systems
+ -------------------------
+ -An open systems must interact with its enviroment/
+ -it receives inputs from and delivers outputs to the outside of the system.
+ -ie information system must adapt to the changing enviroment condition.
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
                           
 
 
