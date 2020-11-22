@@ -33,8 +33,10 @@
    ->It goes beyond recording events to create context.
    ->With this enhanced view, researchers can;
                Describe the environment . Understanding where observations take place can add meaning  to recorded numbers.
-               Identify the people involved in the study. If research is limited to a particular group of people, whether intentionally or as a function of demographic or other factors, 
-               Describe the content of the study. sometimes, the specific activities involved in research  and how messages about the study were delivered and received may illuminate factors about the study.
+               Identify the people involved in the study. If research is limited to a particular group of people, whether 
+               intentionally or as a function of demographic or other factors, 
+               Describe the content of the study. sometimes, the specific activities involved in research  and how
+               messages about the study were delivered and received may illuminate factors about the study.
                
                
                
@@ -55,8 +57,9 @@
                         - is more specific and   is measurable.
                         - 
              
-            conceptual framework - consist od concepts that are placed within a logical and sequential design.
-                                 - represents a less formal structure and  and used for studies in which existing theory is inapplicable or is inapplicable or insufficient.
+            conceptual framework - consist of concepts that are placed within a logical and sequential design.
+                                 - represents a less formal structure and  and used for studies in which existing theory is inapplicable or is 
+                                    inapplicable or insufficient.
                                  - based on  specific concepts and propositions
                                  -Derived from empirical observation and intuition.
                                  -May deduce theories from a  conceptual framework.
@@ -136,7 +139,7 @@ System Analysis
  its components.
 -System analysis is conducted for the purpose of studying a system or its parts in order
  to identify its objectives.
-- It is a problem solving technique that improves the systems and ensures that al the 
+- It is a problem solving technique that improves the systems and ensures that all the 
   components of the systems work efficient to accomplish their purpose.
 - Analysis specifies what the system should do.
 
@@ -185,7 +188,7 @@ Systems design
        -concerned with how a system components are connected together.
        - Meaning the parts of the system work together within system even if each part perform  a unique function.
 -Central objective
-       -the objective of a system must be cental 
+       -the objective of a system must be central
        -it may be real or stated
        -It is not uncommon for an organisation to state an objective and operate to achieve another.
        -the user must know the main objective of a computer application early in the analysis for a successful design and conversion.
@@ -232,7 +235,7 @@ Environment
  
 bounderies and interfaces
 -------------------------
--A system  should be defined by itd bounderires.
+-A system  should be defined by its bounderires.
 -bounderies - are the limits that identify its components, processes, and interrelationships when it interfaces with another system.
 -Each system has bounderies that determines  its  sphere of influence and control.
 -the knowledge of the bounderies of a given systems is cruial in determining the nature of its interface with other systems for successful design.
@@ -254,7 +257,161 @@ a)Physical or abstract systems
  -An open systems must interact with its enviroment/
  -it receives inputs from and delivers outputs to the outside of the system.
  -ie information system must adapt to the changing enviroment condition.
+ -A close system does not interact with its environment.
+ -it is isolated  from enviromental influence.
+ -A completely closed system is rare in reality.
+ 
+ 
+ c)Adaptive and Non Adaptive system
+ -------------------------------------
+ -Adaptive system - response to the change in the enviroment in a way to improve from their performance and to survive.
+ -Non Adaptive system - does not repond to the environment 
+ 
+ d)Permanent or temporary systems
+ ----------------------------------
+ -Permanent system - persist for long time,ie business policies
+ -Temporary system - made for specificied time and after that they are demolished.
+  ie A DJ systems is set up for a program and it is dissembled after  the program.
+  
+  
+  Natural and Manufactured systems
+  --------------------------------------
+  -Natural are created by the nature if solar, seasonal systems
+  -Manufactures - man-made 
+  
+  Deterministic or probilistic systems
+  -------------------------------------
+  -Determinstic - operates in a predictable manner and the interaction between system component is known with certainty.
+  -Probabilistics - show uncertain behavior.
+                  - the exactly output is known .
+                  
+                  
+  Social, human-machine, machine system 
+  -------------------------------------------
+  -Social system - made up of people . ie social clubs, sociaties.
+  -Human-machine system - both human and machine are involved to perform a particular task. ie computer programming.
+  -Machine system - where human interference is neglected. All the task is performed by the machine. ie autonomous robot.
+  -
+  
+  Man-made information system
+  --------------------------------
+  -It is interconnected set of information  resource to manage data 
+   for particular organization, under direct management control(DMC)
+  -this system includes hardware, software, communication,
+   data, and application for producing information according to the need of an organisation.
+ -divided into:
+              formal information system
+                                      -based on the flow of information in the form of
+                                       memo, instruction
+              Information information system
+                                      based system  which solve the day to day work related problem.
+                                      
+              computer Based system 
+                                      directly dependent on the computer for managing business applications.
+                                      for example, automactic library system, railway reservation system.
+                                      
+                                      
+           System Models
+           -----------------
+  schematic models
+  --------------------
+  -is a 2-D chart that shows systems elements and their linkages.
+  -difference arrows are used to show information flow, material flow, and information feedback.
+  
+  
+  flow system models
+  --------------------
+  -Shows the ordely flow of the materials, energy, and information that hold the system together.
+  -program Evaluation and Review Technique(PERT) for example, is used to abstract a real world system in model form.
+  
+  
+  Static System models
+  ---------------------
+  -They represent one pair of relationship such as activityl-time  or cost-quantity
+  -the Gantt chart, for example gieves a statics  picture of an activity-time relationship.
+  
       
+ Dynamic System models
+ -----------------------
+ -For example is Business organisation
+ -Approximates the type of organisation or application that anaysts deal with.
+ -Show an ongoing, constantly changing status of the system 
+ -Consist of :
+           input that enters the systems
+           The processor through which transformation takes place
+           the program(s) required for processing
+           the output(s) that result from processing
+           
+           
+Categories of informations
+------------------------------
+-they are 3 information related to managerial level and the decision managers make:
+     Strategic information
+     management control information
+     operational information
+        
+                                Strategic information            management control infarmation           operational information     
+                                ---------------------           ---------------------------------         ----------------------------
+-volume of information -  low consensed                         medium moderately processed               large detail reports
+-type of information      unstructured                          moderately structure                      highly structure
+-management level         upper                                 middle                                    MIS 
+-System support           Dss                                   Lower                                     DPS
+
+
+
+Strategic information
+--------------------
+- Required by topmost management for long range planning policies for next few years.
+-ie trending in revenue, financial investment, and human resource and population growth.
+-
+
+managerial information
+-----------------------
+-required by middle management for short  and intermidiate range planning which in terms of months . for
+example sales, analysis, cash flow project and annual financial statement.
+
+operation information
+--------------------------
+-Required by low management for daily and short term planning, to enforce day-to-day operation activities.
+-Examples Keeping employee attendance records, overdue purchase orders
+-Achieved with the aid of data processing system(DPS)
+
+
+System development life cycles
+0----------------------------0
+-If effective , it results in a high quality system that meets customers expectations,
+ reaches completion within time and cost evaluation, 
+ works effectively and efficient in the current and planned information technology infrastructure.
+-Used by analysts to develop an information system 
+-includes  the following activities
+          requirement
+          design
+          implementation 
+          testing
+          deployment
+          operations
+          maintenance
+          
+ Phases of SDLC
+ ----------------
+ planning - obtains approval  for project, initiate, assess feasibility, plan, shedule
+ Analysis - understand business  needs and processing needs
+ Design - defines solution system based on requirement and analysis decision
+ implentation - construct, test, train users, install new system
+ maintenance - keep system healthy and improve
+ 
+ 
+ Feasibility study or planning
+ -------------------------------
+ -Define the problem scope of existing system
+ -overview the new system and determine its objectives
+ -confirm project feasibility and produce the project shedule
+ 
+
+
+
+       
+           
       
       
       
@@ -273,7 +430,7 @@ a)Physical or abstract systems
 
          WRITING RESEARCH REPORT
        ---------------------------------
-->As a university student you may be reuired to write a variety of report for  
+->As a university student you may be required to write a variety of report for  
  assessment purpose.
  ->A research  report is one type that is often used in the sciences, engineering and
  psychology.
@@ -361,7 +518,7 @@ Step 4
 Draft the Body of your report
 ----------------------------------
 ->introduction - The purpose of your report
-                 the thesis statement will bee useful here.
+                 the thesis statement will be useful here.
                  Background information may include a brief review of the literature already
                  available on the topic so that you are able to 'place' your research in the field.
                  some brief details of your methods and an outline of  the structure of the report.
@@ -370,7 +527,7 @@ Draft the Body of your report
                     ->It may be useful to do a chronological format where  you discuss 
                     from the earliest to the lasted research.
                     -Place your research approprietely in the chronology.
-                    ->Alternately, you could write in a thematic waym outlining the various 
+                    ->Alternately, you could write in a thematic ways outlining the various 
                      themes that you discovered in the research regarding the topic.
                     ->You will need  to state where your research fit.
 ->Methodology   ->clearly ourline what methodology you used in your research.
@@ -379,12 +536,12 @@ Draft the Body of your report
                 your  research if they wish to.
                 ->If Is usually written in a passive voice - ie the participants were asked
                 to fill the questionnaire attached in appendix)
-                ->Clearly reference any materials ou have used  from other sources.
+                ->Clearly reference any materials or have used  from other sources.
                 -Clearly label and number any diagrams, chats and graphs.
                 ->Ensure they are relevant to research  and add substance to the 
                 text rather than just duplicating what you have said.
                 ->You dont include the results here.
-                Results - this is where you indicate wha you found in your research.
+                Results - this is where you indicate what you found in your research.
                         - You give the results of your research, but do not interpret them.
                Discussion - This is where you discuss the relevence of your results and how  your findings
                            fits with other research in the area.
@@ -404,7 +561,7 @@ Draft the Body of your report
               --------------------------------
 ->References or Bibiliography - this includes all references used in your report 
                                or referred to for background information.
-                               - This masr be done using the referrencing  convention 
+                               - This must be done using the referrencing  convention 
                                specified by your lecturer/tutor.
 ->Appendices - These should add extra information to the report.
              - If you include appendices they must be referred to in the body of the report
