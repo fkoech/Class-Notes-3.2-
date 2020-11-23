@@ -1078,13 +1078,154 @@ to display data from a database.
   ->RepeatColumns - allows  for multiple columns to be displayed.
                   - following  images shows the  same list as 
    
-
-
-
+  ->DatasourceID - the Id of the DAtabase data source control
+                 -Set programmatically
+  -DataTextField - sets the field  used to display the label for each RadioButton.
+  -DataValueField - Sets the fields used to display the value for each RadioButton.
+  
+  
+  MainEvents
+  ------------
+  -SelectedIndexChanged - fired when selected checkBox has been selected.
+  -CheckBoxList - used  to display data from a database.
+            checkBoxList.DataSource = table;
+            CheckBoxList.DataTextField = "name"';
+            CheckBoxList.DataValueField = "id";
+            CheckBoxList.DataBind();
+            
+               -rendered as  a <input> tag in HTML.
+               -rendered as a <select> tag  in HTML.
+               -when repeatDirection is set to horizontal then the it is displayed within a <table>
+               
+DropdownList
+---------------
+-Its control is used to display multiple options that can be selected from a 
+dropdownlist.
+-displayed by:
+             <asp:DropDownList ID="DropDownList" runat="server" ></asp:DropDown>
+             
+      
+ -each item in the DropdownList has two main parts:
+                  the text that is displayed and the value that is hidden.
+ -by default does not inform the server when a selection is made, 
+ -If this communicatio is required then the autopostBack property need to be set to true
+ 
+ useful properties
+ -------------------
+ -CSSClass - allows for css to be assignment to the control from the attached stylesheet.
+ -items- allows items to be added  to the DropDownList 
+         used programmatically to add / remove items from the group.
+ -DataSourceID - the ID of the Database data source control .
+                 this  should be set programmatically.
+ -DataSource - the dynamic source for the contents of the control.
+               only available through code.
+-DataTextField - sets the field used to display the label for each item in the dropDownList
+-DataValuefield - sets the fields used to display the value for each item in the DropDownList.
+-SelectedIndex - returns the index for the selected items(sub-index starts at 0)
+                 only available through code.
+-selectedItem - returns the item object of the selected item.
+               only available through code.
+-selectedValue - returns the value of the selected items
+               - only available through code
+               
+  DropDownList Exercise: play pricing
+  ---------------------------------------
+  -Create a new web form to the web site, named price aspx,
+  make sure the selected master page and the place code in  separate file are selected
+  this page will allow for some prices for plays to be calculated
+  on the page place  a dropdownlist on the dropdownlist should have the ID "cboEvent"
+  from the control properties select the browser button items, this allows for items
+  to be added to the dropdownlist.
+  Each item will have the type of event the threatre is able to put on with the 
+  corresponding value being a general cost.
+  click on the add button to create a new item
+  provide the name as play and the value as 10 
+   and add to create another item .
+ On the page add a TextBox with the ID txtAdult a TextBox with the ID txtChild ,  Button with ID 
+ btnCalculate and the Text calculate price and a Label with the ID lblPrice
+ create the click eventhander for the button, either by double click 
+ the button or selecting the click  event from the  properties of the control.
+ depending on the value from the DropList this is multipied by the number of Adults and children 
+ attending (the cost is halved for child), with the result
+ displayed in the label, following code can be used
+ 
+ 
+ 
+          protected void cmdCalculate_click(object sender, eventArgs)
+          {
+          double noOfadult = double.parse(txtAdult.txt);
+          double noOfChild = double.parse(txtChild.Text);
+          double cost = (noOfadult * double.parse(cboEvent.seletedValue))+((noOfchild * double.parse(cboEvent.selectedValue))/2);
+          }
           
+-the method double.parse is used to take a String and convert it to a Double type.
+-running the web site you should  find that the costs are calculated.
+-Entering 1 adult and 0 children for a play should return the value 10
+-Expanding the exercise
+-currently if there no value in the TextBox then a error occur.
+-try implementing error handling using try
 
 
 
+Calender
+--------------
+-Calender control is used to display a calender.
+-the month and years are displayed along with the days ofthe wek and datas.
+-changing the culture of the page will change the language of the calender.
+-code that display the calender.
+        <asp:calender ID='Calender1" runat="server"></asp:calender>
+Useful properties
+---------------------
+-CSSClass - allows for the css classes to be assignment to the control from the  attached stylesheet.
+firstDayOfWeek - changes the first  day of the week.
+                 By default the first day is monday
+
+
+main Events
+-------------
+-SelectChanged - fired when a date is selected
+-visibleMonthchanged - fired when the month is changed.
+-dayRender - fired when each day of the calender is rendered
+            as part if it individual Day can be customized.
+-the calender control is rendered as a <table> in HTML.
+
+
+calender exercise :createing the schedule
+------------------------------------------
+-A threatre need a method to display  what events that are  upcoming.
+-one way to  do this is by using a calender to show the dates tha events are taking place
+-create a new form named schedule.aspx 
+-on the new page place a calender control with the ID calShedule
+-showing the current day would be a nice feature.
+-create the DayRender event handler for the calender control.
+-add the following code that checks the current data against the current data and changes the
+background color of the day.
+             //Disable the ability to select the day e.day.isSelectable = false;
+             //check the current data 
+             if (e.Day.Date == DateTime.now.Date)
+               {
+               //change the day color
+               e.Cell.BackColor = System.Drawing.Color.red;
+               e.Cell.ForeColor = System.Drawing.Color.White;
+               }
+-to display the days when events  take place will be done in the database selection of this unit
+-
+
+Panel
+-------
+-Is a container element that is able to contain other controls.
+-Meaning the page can be made up of a number of panels and these can be hidden or shown as required
+
+     <asp:PanelID="panel1" runat=server"></asp:panel>
+-in code the panel can be displayed using the visible property
+    panel1.visible = true;//displays the panel
+    panel1.visible = false; // hies the panel
+    
+    
+    useful properties
+    ---------------------
+-CSSClass - allows for css classes to be assigned  to the control from the attached stylesheet
+-Visible -sets if the panel is visible.
 
 
 
