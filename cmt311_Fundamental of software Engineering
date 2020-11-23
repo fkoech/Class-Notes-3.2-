@@ -14,7 +14,7 @@ Course outline
 ->SE practice 1: system Engineering
      -Reverse Engineering
      -A look ahead at OO and SOA techniques
-->SE Practice 11: Requirements Engineerin and the analysis Model
+->SE Practice 11: Requirements Engineering and the analysis Model
      -formal methods
      -Clean-room SE
      -Components Based Development
@@ -113,7 +113,7 @@ response to customer change request
 
 Techical, human, organisation issues
 --------------------------------------------
--Are the cultural or organisational issuesthat may affect the system development
+-Are the cultural or organisational issues that may affect the system development
 -Traditional engineering  organisation 
 
 
@@ -134,17 +134,119 @@ Testing in XP
 
 
 
+Additional notes from the internet
+--------------------------------------
+Used case analysis
+-----------------------
+-Describe a real usage scenario
+-point of view of the user
+-Written as list, emphasizing end result and steps taken
+
+.Use Case: record a sale onto  the Syste
+.Role: sales staff
+.main success scenario
+ 1.User initiates an "add sale" operation
+ 2.The software requests for the name and quantity of item sold
+ 3.the user inputs name and quantity, and confirms the action
+ 4.the software stores the new entry into the system.
+ 
+ 
+.Extensions
+   2.1 the user has input a quantity less than 1
+   2.2 the software indicates to the user that the amount  is invalide
+   2.3 the use case returns to step 2
+   
+   requirement analysis
+   -------------------
+   functional requirement
+   non-functional requirement
+     usually a characteristic or property of the system
+     eg records must be retrieved within 3 seconds
+     
+ 
+prototypes
+--------
+-Build a (usually non-functional ) system that represents the visual layout and linkag of features
+.
+
+planning 
+--------------
+-modularization
+  .one big part of planning 
+  . how big program are broken down to small parts
+  
+-Cohesion - how much the elements of amodule are related
+            measured in terms of tasks done or type of data handled
+         - high cohesion - task are strongly related
+         -low cohision - task dont  relate to each other
+-coupling - the degree of dependence modules have among each other.
+    
+    
+    
+    Software process
+    ----------------------
+-Structured set of activities for software developement.
+
+         fundamental aspects
+           ------------------------
+        -specification - defining what the software should do 
+        - design - defining the organisation and the structure of the system
+        - implementation and testing - programming the system and checking that it does what the customer wants
+        -evalution - checking the system in response to changing customer needs
+        -plan-driven processes are processes where all of the process activities are planned in  advanced and progrss  is measured against this plan
+  
+  
+waterfall process
+ ------- -------------
+ -Brings development proces into a series of actiities
+    requirement definition
+    system software design
+    implementation  and unit testing
+    integration and system testing
+    operation and maintenance.
+    
+    
+-problem with it is that - the is output in each of the phases , and if the is an 
+a modification to be made, should be done in all the phases.
+- only appropriate when the requirement are well-understood and changes limited 
+ during the design process.
+-Used in systems engineering projects where a system is developed at several sites
+-th plan-driven nature of the waterfall model helps coordinate the work.
 
 
-
-
-
-
-
-
-
-
-
+Agile process
+---------------
+-Based on incremental developmen where process activities are interleaved.
+-Minimal documentation
+-Aim is to be responsive to change and reduce the time required to deliver usedful functionality to user
+-its benefits is that 
+    - the cost of implementing changes  to customer requirement is reduced.
+    -The amount of analysis and documentation that has to be refone is less than
+    is required with waterfall model.
+    -It is easier to get customers  feedback on the development work.
+    -customers can comment on demonstrations of the software and see how much has bee implemented.
+    -software products and apps
+    -Business systems
+-Its problems is that 
+           -the process is  not visible 
+           documents helps managers assess progress but in agile processes systems
+           it is not cost-effective  to document every version of the system.
+          -System structure tends to degrade as new increments are added.
+           unless time and money is spent on refactoring to improve the software regular
+           change usually corrupts its structure.
+           
+           
+ integration and reuse
+ -------------------------
+ -systems are integrated from existing components or application systems.
+ -Reused elements may be configured to adapt their behaviour and functionality to 
+  user requirements.
+  
+ -stand-alone application systems that are configured for use in a particular environment.
+ -reusable components that are intergrated with other reusable and specially writtent components.
+ -Requirements are planned in advance but an iterative and agile approach can be taken to design and implementation.
+ 
+  
 
 
                        
