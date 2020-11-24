@@ -20,14 +20,19 @@ Lesson one
                     information  accurately and descriptively.
                     -takes things  a step further by allowing  users rapid visual feedback from their actions.
                     -Encompasses anything achieved visually on computers.
+                    -Encompasses cycle
+                           input->processing->displau/output
 interactive computer graphics 
 ------------------------------
 ->Sketchpad - developed in 196os
             - first interactive computer graphics application
-            
+            -allow user to create accurate design drawing.
+->computer graphics - is  ubiquitous - because modern computing involves some graphics.
+                    - encompasses anything achieved visually on computer
+                    
    Application of computer Graphics
    ---------------------------------
-->Areas that hevy uses are:
+->Areas that heavy uses are:
                           Educations
                           Computer aided design
                           scientific visualisation
@@ -69,8 +74,113 @@ interactive computer graphics
                   Enables us to compute the angle θ between two vectors(if we normalise them first)
                     a.b=|a||b|cosθ
           -We can computer the square of the magnitude of a vector by taking the dot products of that vector and itself:
-             ==|a|2
-          -Vector Cross product              
+             ==|a|2 (for this case it is power two)
+  -Vector Cross product   
+          .taking the cross product(or vector product) of two vectors returns us a vector orthogonal to
+          those two vectors.
+          
+          
+          Matrices
+          ------------
+          -Simple a grid of numbers
+          -scalar multiplication - multiply each element by the scalar
+                          s*a s*b s*c
+                          s*d s*e s*f
+         -matrix addition - 
+           a b x      
+           d e f  + 
+           r t r
+           
+    Lesson 3
+    ------------------
+    -Graphic pipeline
+    -------------------
+    computer graphics 2D coordinate  systems
+    ----------------------------------------
+    -A coordinate system is way of assigning numerical coordinattes to geometric points
+    -Graphic objects displayed on the screen on the display coordinate area
+    -Cordinate systems number rows from top to bottom, starting from zero and columns from left to right again starting from zero.
+    -A digital image is made up of row and columns of pixel.
+    -A pixel can be identified by a pair of integers  giving the column and the row number.
+    -Dept(precision) - number of color-bits per pixel 
+    -resolution of the display - number of row by columns of the rectangular grid.
+                               - ranges from  640x480 (VGA)
+                               -800x600(SVGA) 
+   -Frame buffer - part of graphic memory that store the color values of the pixels.
+   -rows and columns number identifies a pixel 
+   -A pixel contains infinite number of points.
+   
+   The problems of mapping number based coordinate systems to pixel based coordinate systems
+   -----------------------------------------------------------------------------------------
+   -Unless the line is horizontal or vertical, we can't actually draw diagonal lines by coloring pixels
+   -A diagonal geometric line will cover some pixels only partially(It is not possible to make part  
+   of a pixel black and part of it white.
+   -When you try to draw a line with black and white pixel only, the result is a jagged staircase effect.
+  
+  
+  Ant aliasing 
+  ---------------
+  -Technique used to reduce the jagged or staircase appearance of diagonal lines, text, and other
+  shapes that are drawn using the pixel.
+  -Its cause is due to a pixel only partly covered by a geometric shape.
+  -aliasing can be produced  when representing a high-resolution signal(image at a lowe resolution device)
+  -In ant alias the color of the pixel is a blend of the color of the shape and the color of the 
+  background.
+  -With the degree of blending depending  on th fraction of the pixel that is covered by the geometrics shape.
+  -how it is done:
+                 each pixel is subdivide(sub-sampled) in n region 
+                 each sub-pixel has a color
+                 -compute the average color which is assigned to the pixel
+                 -the more the number of samplrs the better the approximatation
+                 
+   Understanding the graphics subsystems
+   -------------------------------------
+   Raster image, vector image and rasterisation
+   --------------------------------------------
+   -A one-pixel-wide line looks good at 100 ppi , but at 400 ppi , 
+   a one -pixel-wide line is probably too thin.
+   -On a desktop systems, a pixel is usually about one 1/100  inch
+   -On  a smart phone, which is usually viewed from a closer distance, the value might be closer  to 1/160
+    inch.
+   -Raster image - the resulting image on working with pixels.
+   -Vector graphics  are computer graphics images that are defined in terms of pointd on a cartesian plan
+   which are connected by lines and curves to form polygons and other shapes.
+   -Working with vector images remove the complications that arise when working with raster images.
+   -However when all the work is done the vector image has to be converted to a raster image so 
+   that it can be displaying on a computer display.
+   -This is called rasterisation.
+   -input->Central processing unit->graphics processing unit
+       
+       
+   GPU(graphics processing unit)
+   ---------------------------------
+   -produces the images for the display with its own graphics memory(VRAM)
+   -All modern displays are raster-based.
+   -A raster is a 2D rectangular grid of pixel(or picture element)
+   -A pixel has two properties a color and position
+   -color is expressed in RGB(Red-Green-Blue) component- typically 8 bits per component or 24 bits per pixel(or true color)
+   
+   Frame and refresh rate
+   -------------------------------
+   -the color value of the pixels are stored in a special part of graphics memory called frame buffer.
+   -The GPU writes the color value into the frame buffer.
+   -the display reads the color values from the frame buffer row-by-row, from left-to-right, top-to-bottom,  and put each of the value onto the screen.
+   -this is called raster-scan
+   -The display refresh its screen several dozen times per seconds, typically 60Hz for the LCD monitor.
+   and high for the CRT tubes. this is knowns as refresh rate.
+   -Frame - is a complete screen image.
+   -Tearing - screen showing part of the old frame and part of the new frame.
+   -Double buffering 
+            -Solution to tearing
+            -the GPU uses two of frames buffer  a font buffer and a back buffer.
+    -buffer swap/ apage flip - where the GPU signaled to swap the font
+                 
+   Resolution
+   --------------
+   -Measured in terms of the number of pixels per inch on the display, a quantity reffered to as PPI(pixel per inch)
+   -Each screen trend to have resolution of about 72 PPI.
+   -However todays, display can be 200, 300, or even 400 pixel per inch.
+   
                     
 Lesson six 
 -----------
@@ -89,7 +199,7 @@ Understanding the HTML five DOctype
 ->A document type declaration, or DOCTYPE for short is an instruction to the web browser about 
 the version of markup language in which a web page is written.
 ->According the HTML specification  of standard , every  HTML document require a valid document type  declaraion to 
-ensure  that your web pages are displayed the way they aee intended to be displayed.
+ensure  that your web pages are displayed the way they are intended to be displayed.
 ->
 
 
@@ -97,12 +207,13 @@ Canvas Elements Size versus Drawing surface size
 ---------------------------------------------------
 ->canvas have two sizes:
                   1)the size of the element(canvas) itself 
-                  2)the sixe of the element's drawing surface.
+                  2)the size of the element's drawing surface.
 ->Setting the element's width and height attributes sets both of the these sizes;
 ->CSS attribute affect only the element's size and not the drawing surface.
 ->By difault, both the canvas element's size and the size of its drawing surface is 3000 screen
 pixel wide and one  hundred and fifty screen pixels hight.
-->When a canvas element's size does not match  the size of its drawing surface, the borwser scales the drawing surface to fit the element (which may result in surprising and unwanted effects.
+->When a canvas element's size does not match  the size of its drawing surface, the borwser scales the
+drawing surface to fit the element (which may result in surprising and unwanted effects.
 
 
 
@@ -224,7 +335,8 @@ a. Shading refers to the process of altering the color of an object in the 3D sc
 b. Shading refers to the process of altering the color of an object in the 3D scene using flat shading methods 
 c. Refers to the process of altering the color of an object in the 3D scene, based on its angle to lights and its distance from lights source to create a photorealistic effect
 d. Shading refers to the process of altering the color of an object by use of the shading tool in graphic application
-The correct answer is: Refers to the process of altering the color of an object in the 3D scene, based on its angle to lights and its distance from lights source to create a photorealistic effect
+The correct answer is: Refers to the process of altering the color of an object in the 3D scene, based on its angle to lights and
+its distance from lights source to create a photorealistic effect
 
 
 What is specular highlight as used in computer graphics?
@@ -233,7 +345,8 @@ a. It is the bright spot of light that appears on shiny objects when illuminated
 b. A bright spot on an object obtained by use of flat shading and lighting techniques .
 c. A bright spot on an object obtained by use of Goround shading and lighting techniques .
 d. A bright spot on an object obtained by use of diffuse reflection and the law of reflection .
-The correct answer is: It is the bright spot of light that appears on shiny objects when illuminated light is perfectly reflected in a mirror-like way from the light source to the viewer
+The correct answer is: It is the bright spot of light that appears on shiny objects when illuminated light is perfectly
+reflected in a mirror-like way from the light source to the viewer
 
 
 Texture mapping is one of the important image processing in computer graphics. What is its significance?
@@ -242,7 +355,8 @@ a. It enables the use of a 3D image file that can be applied to the surface of a
 b. This is the use of a 3D image file that can be applied to the surface of a2D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
 c. It is used in the  task of combining two or more images to create a more complicated image
 d. It enables the use of a 2D image file that can be applied to the surface of a 3D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
-The correct answer is: It enables the use of a 2D image file that can be applied to the surface of a 3D model to add color, texture, or other surface detail like glossiness, reflectivity, or transparency.
+The correct answer is: It enables the use of a 2D image file that can be applied to the surface of a 3D model to add color, texture, or other 
+surface detail like glossiness, reflectivity, or transparency.
 
 
 What is the result of cross product of any two vectors?
@@ -440,7 +554,7 @@ General discussions
   along a vector from one color to another, 
   possibly following by additional transitions along the same vector to other colors.
            -Used anywhere in images, normally as a background element.
-           -llow designer to expore new opportunities to provide fresh, clean designs for audience.
+           -allow designer to expore new opportunities to provide fresh, clean designs for audience.
            -They are of two types:
                          Linear gradient
                          Radial Gradient
@@ -641,7 +755,7 @@ with  the start circle and moves towards the end circle.
  
  
        //drawImage() method require an image object
-       //create an image and wait for it to lod before instantiating drawImage()
+       //create an image and wait for it to load before instantiating drawImage()
        //accomplish by using the onload property of the image object
        <script>
        var canvas=document.getElementBy
