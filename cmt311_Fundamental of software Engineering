@@ -31,8 +31,280 @@ Course outline
                          using well-defined scientific principles, methods and procedures.
                        - Results into efficient and reliable software products(high quality software products)
                        
-                       
-                       
+             
+      Chapter 1
+     ---------------
+ -what is a software 
+            Computer programs - that when executed provide desired feature.
+            data structure - that enable a programs to adequately manipulate input values
+            Documentation - that describes the operation and use of  the programs
+            
+            
+-Software product
+               -may be developed for a particular customer or general market
+               -classified into: 
+                               Generic-developed  to be sold to a range of different customers
+                                      -stand-alone systems
+                                      -marketed and sold to any customer
+                                      -ie Graphics programs, project management tools, CAD software,
+                                      
+                               Bespoke- developed for a single customer according to their specification.
+                                      -customized products
+                                      - embedded control systems, air traffic control software, traffic monitoring systems.
+                                      
+
+-Changing nature of software
+              -system software
+              -applicatio software
+              -engineering /scientific software
+              -Embedded /mobile software 
+              -product-line software
+              -web application software
+              -Aritficial intelligence software
+              -
+-Legacy systems  $ quality
+             -many ligacy (old) systems remains supportive to core business functions and they are indispensable to the business.
+             -Unfortunately, poor quality is a problem 
+             -inextensible designs
+             -convoluted code
+             -poor documentation
+             -poor test strategies and cases
+             -poor change management
+                         
+-Software myths
+             -existing  standard and procedures will sufice
+             -more programmers = more progress
+             -outsourcing removes responsibility
+             -General(draft) requirements are enough to start the projects with.
+             -program is done when it is finished
+             -Quality can only be assessed at the end
+             -only the working program need be delivered
+             -software  engineering is too rigorous and bureaucratic and will only slow down.
+             
+-what is software engineering 
+                  -the ultimate goal(driving motivation) is quality
+                  -the main problem is complexity
+                  -It about managing software development complexity
+                  -unit contains 4 million line of code.
+                  -Establishment and use of sound engineering principles in order to obtain economically produced software that is 
+                   reliable and work efficiently on real machines.
+                  -Should adopt a systematic $ organised approach to their work 
+                  -should use appropriate tools and techniques depending on the:
+                               the problem to be solved
+                               the developement constaints
+                               resource available.
+-What is the difference between software engineering and computer science
+------------------------------------------------------------------------------
+               -computer science - theory
+                                 -fundamentals
+               -software engineering  - the practicality of development
+                                      -delivery of useful software.
+                                     
+-Computer science theories - are currrently insufficient to act as a complete underprinning for software engineering,
+                            it is the fundation for practical aspect of software engineering.
+                            
+                            
+-What is the difference between software Engineering and system engineering
+-------------------------------------------------------------------------
+      -software engineering - part of system engineering.
+      -system engineering - concerned with all aspects of computer-basesd systems development including 
+                                                  hardware
+                                                  software
+                                                  process engineering
+                         -involved in: 
+                                  system specification
+                                  architectural design
+                                  integration and deployment
+                               
+                               
+-Software engineering layers
+------------------------------
+-Quality focus - bedrock thst supports software engineering.
+-process  - the gue that holds the technology layers together and enables rational and timely development.
+-methods - the technic on how to build software
+         - process establishes the context in which methods  are applied
+      
+-tools - provides automated or semi-automated support for the process and methods
+
+SE Layers
+----------
+Quality focus -> process -> methods -> tools
+
+
+process framework
+---------------
+-Establishes the foundation for a complete process by providing  a small number of  framework activities that are applicalbe to all 
+ software projects.
+-contains sets of ambrella activities that are applicable accross the entire software process.
+-its activities is populated by a set of software engineering actions(a collections of related tasks that produces a major software engineering work product ie  analysis)
+-its actions is populated with indidual work tasks that accomplish some part of th work implied by the actions.
+
+Process definition
+---------------
+-process - defines who is doing what, when , and how to reach a certain goal
+
+Generic process Frameworks
+---------------------------
+-communication
+-planning
+-modelling
+-construction
+-Deployment.
+
+Communication
+------------------
+-involves heavy communication and collaboration with the customer(and other stakeholders)
+-Encompasses requirements gathering and other related activities.
+
+planning
+-----------
+-Describes;
+    the technical tasks to be conducted,
+    the risks that are likely , 
+    the resource that will be required
+    the work products to be producted and the work shedule.
+
+Modelling 
+-----------
+-Encompasses the creation of models that allows the developer and the customer to better understand software requirement
+and the design  that will achieve   those requirement.
+
+constructions
+------------
+-combines the code generation(manuak and automated)
+ and the testing that is required to ancover the errors in the code
+ and to ensure that the implementation meet the requirement.
+ 
+ Deployement
+ ------------
+ -The software (as a complete entity or as a partially completed increment) is delivered to the customer
+ who evaluates the delivered product and prvides feedback based on the evaluation.
+ 
+   
+ umbrella activities
+ ------------------------
+ -Software project tracking and control
+ -Risk management
+ -Softeware management
+ -Software quality assurance
+ -Formal technical review
+ -measurement
+ -software configuration management.
+ 
+
+
+Software process frameworks
+-------------------------------
+-A set of activities whose goals is the developemt of evalution of software.
+-Generic activities in all software process 
+      -specification -what the system should do and its development contraints
+      -Development - production of the software systems
+      -validation - checking that the software is what the customer wants
+      -Evolution - Changing the software in response to changing demands.
+  
+A process meta-model
+--------------------
+-The capability maturity model integration(CMMI)
+---------------------------------------------------
+-meta-model
+       -comprehensive  process
+       -Developed by software engineering institute(SEI)
+-predicate on the set of system and software enginneering capability that should be
+ presented as organizations reach different levels of process capability and maturity
+-To achieve this organistion should develop a process model that conforms to the CMMI guidelines.
+-cmmi - presents a process meta-model in 2 different ways;
+                                 continuous model
+                                 staged model
+       -defines each process area in terms of specific goals which establish characteristics  that must exist if the activites implied
+        by rhe a process area area  to be affective.
+-specific activities -  refines a goal into a set of process-related activities.
+
+-cmmi continuous model - presented in  a two dimensional graphics
+                           level 0 -incomplete
+                           level 1 performed
+                           level 2 managed
+                           level 3 defined
+                           level 4 quantitatively managed
+                           level five optimized.
+-CMMI - staged model - defines the same process areas, goals and practices as continuous model
+                      main diffferent is that it defines five maturity levels rather than five capability level.
+                      
+                      
+proccess patterns
+------------------
+-software process -  defined as  a collection of patterns that defines a set of activities, actions, work tasks, work products or related 
+                     behaviour  required to develop computer software.
+                     - provides a template - a consistent method for describing an important characteristic of the software process.
+
+process assessment
+--------------------
+-standard CMMI assessment methods for process improvement(SCMPI)
+-CMM-based appraisal for  internal process improvement(CBA IPI)
+-
+
+Personal $ Team process models
+--------------------------------
+-person software process(PSP)
+       -emphasized personal measurement of both the work produced and its quality
+       -five framework activities
+                   planning
+                   high-level design
+                   high-level design review
+                   development
+                   post-mortem
+-Team software process
+      define element of the team process and activities that occur within the process.
+      
+processs technology
+-------------------
+-tools allows a software organisation to build n automated model of the common process framework, task, sets, and umbrella activities .
+-the model can then be analyzed to determine typical workflow and examine alternative process structures.
+-integrated combinations leads to CASE(computer aided software Engineering)
+
+
+what is a CASE
+--------------
+-software system which are intended to provide automated support for software process activities ie
+       requirement analysis
+       system modelling
+       Debugging
+       Testing
+       
+-Upper-CASE
+-----------
+ -tools to support the early process activities of requirement and design.
+ Lower-CASE
+ ------------
+ -tools to support later activities such as programming, debugging, and testing
+ 
+ 
+ What are the costs of software engineering
+ ------------------------------------------------
+ -cost vary depending on the type of the system being developed and the requirements ie performancem and system reliability.
+ -Distribution of costs depends on the developement model that is used.
+ -software cost on a pc are often greater than the hardware cost
+ 
+ 
+ Attributes of a good software
+ ---------------------------
+ -Should deliver the required functionality and performance to the user  
+ -Should be maintainable, dependable and usable.
+ -maintainable - software must evolve to meet changing needs
+ -Dependability - software  must be trustworth
+ -Efficienct - software should not make wasteful used of system resource
+ Usability - Software must be usable by the users  for which  it was designed.
+ 
+ 
+ key challenges facing software engineering 
+ -------------------------------------------
+ -Legacy systems - old, valuable systems must be maintained and update.
+ -Heterogeneity - systems are distributed  and include a mix of hardware and software.
+ -Delivery - there is  increasing  pressure for faster delivery of software.
+ 
+
+ 
+ 
+ 
     Chapter 2 
     ------------
     software Process(SP)
@@ -198,7 +470,7 @@ planning
   
 waterfall process
  ------- -------------
- -Brings development proces into a series of actiities
+ -Brings development proces into a series of activities
     requirement definition
     system software design
     implementation  and unit testing
