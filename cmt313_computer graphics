@@ -4,7 +4,7 @@ INTRODUCTION
 more interactive 
 ->used to modify the content  of forms, change images, open new windows and write dynamic page content.
 ->used with css to make DHTML(Dynamic hperText makeUp language)
-->this allows you to make parts of your web paes ppear or disappear or move around on the page.
+->this allows you to make parts of your web pages appear or disappear or move around on the page.
 ->It only execte on the pages  that are on your browser  window at any set time.
 ->When the user stop viewing that page  , any script that were runnning on it are  immediately stopped.
 ->the only exceptions are cookies or various client side storage API, which can be used by many pages to store 
@@ -21,7 +21,7 @@ Lesson one
                     -takes things  a step further by allowing  users rapid visual feedback from their actions.
                     -Encompasses anything achieved visually on computers.
                     -Encompasses cycle
-                           input->processing->displau/output
+                           input->processing->displauy/output
 interactive computer graphics 
 ------------------------------
 ->Sketchpad - developed in 196os
@@ -128,10 +128,10 @@ interactive computer graphics
   background.
   -With the degree of blending depending  on th fraction of the pixel that is covered by the geometrics shape.
   -how it is done:
-                 each pixel is subdivide(sub-sampled) in n region 
+                 each pixel is subdivide(sub-sampled) in a region 
                  each sub-pixel has a color
                  -compute the average color which is assigned to the pixel
-                 -the more the number of samplrs the better the approximatation
+                 -the more the number of samples the better the approximatation
                  
    Understanding the graphics subsystems
    -------------------------------------
@@ -143,7 +143,7 @@ interactive computer graphics
    -On  a smart phone, which is usually viewed from a closer distance, the value might be closer  to 1/160
     inch.
    -Raster image - the resulting image on working with pixels.
-   -Vector graphics  are computer graphics images that are defined in terms of pointd on a cartesian plan
+   -Vector graphics  are computer graphics images that are defined in terms of point on a cartesian plan
    which are connected by lines and curves to form polygons and other shapes.
    -Working with vector images remove the complications that arise when working with raster images.
    -However when all the work is done the vector image has to be converted to a raster image so 
@@ -183,7 +183,7 @@ interactive computer graphics
    
   Double Buffering and VSync
   -----------------------------
-  -the displa reads from the front buffer, whhile a wite of the next frame to the back buffer takes place.
+  -the display reads from the front buffer, whhile a write of the next frame to the back buffer takes place.
   -When writing ends the GPU signaled to swap the front and back buffer(known as buffer swap or page flip)
   -Double buffering alone not solve the entire problem,as the buffer swap might occur at an
   inappropriate time. ie while the display is in the middle of the display the old frame.
@@ -217,7 +217,7 @@ similar to a factor assembly line or water/oil pipe.
           Application stage
           ----------------
 -Entirely done in software by  the CPU.
--Progrrammerr decides what to happens
+-Progrrammer decides what to happens
 -Include reading Data from the world geometry database,
 -user's input by mice, trackballs, tracjers, or sensing glovers.
 -In response to the users input , the application stage change the view or scene.
@@ -232,7 +232,7 @@ similar to a factor assembly line or water/oil pipe.
                        games, computer simulation, robotic and computational physics,
 -Animation  - giving life to any object
              It has the power of injecting energy and emotions into the most seemingly inanimated objects
-Morphing - is a special effct in motion picture
+Morphing - is a special effect in motion picture
            animation that changes one image or shape into another through a seamless transition.
            -Metamorphosis from one image to the other consists of fading out the source image and fading 
            in the destination image.
@@ -267,13 +267,13 @@ Morphing - is a special effct in motion picture
                 analogy of computer graphics
                             -place the object in your scene(model transform) but the camera is always at a fixed position.
                             -move around (transform) the entire world(view transform) so that it aligns to the camera at the distance and 
-                            anglrs that you want, then you take the picture.
-                            -calcuate lighting(shading) , projection, rasterrize(render) the scene  
--Technically in computer, all the verices undergoes transformation in the scene to align with the camera
+                            angles that you want, then you take the picture.
+                            -calculate lighting(shading) , projection, rasterrize(render) the scene  
+-Technically in computer, all the vetices undergoes transformation in the scene to align with the camera
 -We do not have the concept of a separate camera view
--the camera is always stationalry and everything transforms around the cameral
+-the camera is always stationary and everything transforms around the camera
 -the end result of view transform is model-view matrix.
--Mdoelview matrix - concatenation of model matrix and view matrix.
+-Model view matrix - concatenation of model matrix and view matrix.
 -view matrix - defines the Position(location and orientation) of the camera
 model  matrix - defines the frame's position of the primitive you are going to draw.
 
@@ -281,7 +281,7 @@ Clipping/ Hidden surfaces removal
  ----------------------------------
  -Clipping - process of removing all objects/parts of objects that is not in th view volume.
  -it is harder than it sound , because some objects/polygons may intersect one of the view plane.
- -Bassically, the way we handle this is by creating vertices from the polygons at the intersectio points, and getting 
+ -Bassically, the way we handle this is by creating vertices from the polygons at the intersection points, and getting 
  and rid of the rest of the polygons that won't be seen.
  
 
@@ -291,7 +291,7 @@ Vertex shading
 -meaning we calculate how light should affect any  given vertex on the object.
 -done by program called vertex shader.
 -shader is a text file with a program pin it and it runs on each vertex in your scene.
--Vertex shader - ruun on GPU
+-Vertex shader - run on GPU
                - Generally quite fast
                -access memory directly on the video card
                -benefit from parallelization(parallel programming)
@@ -299,10 +299,10 @@ Vertex shading
 Projection
 ----------------
 -since a camera does not capture everything, it is achieved  by using the concept of view frustum
--camera operate on the basis of perspective projection(distanr object appear smaller and near objects appear bigger)
+-camera operate on the basis of perspective projection(distant object appear smaller and near objects appear bigger)
 -view frustum - also viewing frustum
               - Region of space in the modeled world that may appear on the screen.
-              -With it anything inside the volume of the frustum is drawn everything outside is outsie is excluded or clipped.
+              -With it anything inside the volume of the frustum is drawn everything outside is outside is excluded or clipped.
               -in real 3D applications,there are setting for near and far clipping planes.
               
 -With perspective projection
@@ -322,7 +322,7 @@ Projection
                 intersect the plane of the screen.
                 The point of intersection is the projection of vertex.
                 -makes an attempt to display picture in its true shape and size
-                -When prokector are perpendicular to view plane then is called orthographic projection.
+                -When projector are perpendicular to view plane then is called orthographic projection.
                 -Used by the architects and engineers for creating working drawing of the object
                 
 model view projection
