@@ -181,7 +181,283 @@ interactive computer graphics
    -Each screen trend to have resolution of about 72 PPI.
    -However todays, display can be 200, 300, or even 400 pixel per inch.
    
-                    
+  Double Buffering and VSync
+  -----------------------------
+  -the displa reads from the front buffer, whhile a wite of the next frame to the back buffer takes place.
+  -When writing ends the GPU signaled to swap the front and back buffer(known as buffer swap or page flip)
+  -Double buffering alone not solve the entire problem,as the buffer swap might occur at an
+  inappropriate time. ie while the display is in the middle of the display the old frame.
+  -This is resolved via the so called vertical synchronization(VSync)at the end of the raster-scan.
+  
+  VSync
+  ----------
+  -When we sifgnal to the GPU to do a buffer swap, the GPU will wait till the next VSync to perform
+  the actual swap,
+  -After the entire current frame is displayed
+  -When the Vsync buffer-swap is enabled, you cannot refresh the display faster than the refresh 
+  rate of the display.
+   -For the LCD/LED display, the refresh rate is typically locked at  60Hz  or frames  per seconds, or  16.7 
+    millisconds for each frame.
+   -If your application refresh at a fixed rate, the resultant refresh rate likely to be an
+   integral factor of the display's refresh rate ie 1/2, 1/3, 1/4
+   
+Graphics/ rendering pipeline
+-------------------------------
+-Graphic pipeline - conceptual model that describes what steps  a graphics system need to
+perform  to render a 3D scene to a 2D screen.
+-Steps required depends on the software and hardware used and the desired display characteristics.
+-Graphics processes generally executes sequentially
+-pipelining - series of processing stages which the output from one stage is fed as the input of the next stage.
+similar to a factor assembly line or water/oil pipe.
+-Three stages of the graphic pipeline:
+                         Application stage
+                         Geometry stage
+                         Rasterization stage.
+                         
+          Application stage
+          ----------------
+-Entirely done in software by  the CPU.
+-Progrrammerr decides what to happens
+-Include reading Data from the world geometry database,
+-user's input by mice, trackballs, tracjers, or sensing glovers.
+-In response to the users input , the application stage change the view or scene.
+-Once we have the input, it changes the view or scene.
+-Its end results are rendering primitive such as vertices/points, triangles
+-Task done here includes:
+                    collision detection
+                    animation
+                    morphing and acceleration techniques
+-Collision detection - computational problem of detecting the intersection of two or more objects.
+                     - also has applications in other computing fields such as computer 
+                       games, computer simulation, robotic and computational physics,
+-Animation  - giving life to any object
+             It has the power of injecting energy and emotions into the most seemingly inanimated objects
+Morphing - is a special effct in motion picture
+           animation that changes one image or shape into another through a seamless transition.
+           -Metamorphosis from one image to the other consists of fading out the source image and fading 
+           in the destination image.
+           -Described as an effect that can be used to manipulate still image or to create intersting 
+           animation/ still transformation
+           
+           morphing process
+           -----------------
+           pre-processing -> coordinate transformation -> cross-dissolve
+  
+ Geometry stage
+ --------------------
+ -consist of the majority of the operations
+ -mostly works with polygons and the vertices(with vertex pipeline)
+ -input from the application stage.
+ -model $ view transformation
+ -light(shading)
+ -projection
+ -clipping
+ -Its basic idea is to get a 3D representation of scene into 2D representation.
+ -Note that at this point in the pipeline, nothing is actually drawn yet
+ -We are just doing 'transformation' of 3D primitive and turn them into 2D coordinate that can 
+ be fed into the next stage(rasterization) to do the actual drawing.
+ 
+ model and view transformation
+ ---------------------------------
+ -Its idea is to place objects in a scene, then view it from whatever angle and viewpoint you'd like.
+ -Example is the analogy of photograph-
+                            -Take the object and place the object in your scene(fixed position)
+                            -Place a camera in your scene and take the photo(camera moves about)
+                            -take the photo
+                analogy of computer graphics
+                            -place the object in your scene(model transform) but the camera is always at a fixed position.
+                            -move around (transform) the entire world(view transform) so that it aligns to the camera at the distance and 
+                            anglrs that you want, then you take the picture.
+                            -calcuate lighting(shading) , projection, rasterrize(render) the scene  
+-Technically in computer, all the verices undergoes transformation in the scene to align with the camera
+-We do not have the concept of a separate camera view
+-the camera is always stationalry and everything transforms around the cameral
+-the end result of view transform is model-view matrix.
+-Mdoelview matrix - concatenation of model matrix and view matrix.
+-view matrix - defines the Position(location and orientation) of the camera
+model  matrix - defines the frame's position of the primitive you are going to draw.
+
+Clipping/ Hidden surfaces removal
+ ----------------------------------
+ -Clipping - process of removing all objects/parts of objects that is not in th view volume.
+ -it is harder than it sound , because some objects/polygons may intersect one of the view plane.
+ -Bassically, the way we handle this is by creating vertices from the polygons at the intersectio points, and getting 
+ and rid of the rest of the polygons that won't be seen.
+ 
+
+Vertex shading 
+-----------------
+-Everything needs (light source and objects are all in 3D space)
+-meaning we calculate how light should affect any  given vertex on the object.
+-done by program called vertex shader.
+-shader is a text file with a program pin it and it runs on each vertex in your scene.
+-Vertex shader - ruun on GPU
+               - Generally quite fast
+               -access memory directly on the video card
+               -benefit from parallelization(parallel programming)
+
+Projection
+----------------
+-since a camera does not capture everything, it is achieved  by using the concept of view frustum
+-camera operate on the basis of perspective projection(distanr object appear smaller and near objects appear bigger)
+-view frustum - also viewing frustum
+              - Region of space in the modeled world that may appear on the screen.
+              -With it anything inside the volume of the frustum is drawn everything outside is outsie is excluded or clipped.
+              -in real 3D applications,there are setting for near and far clipping planes.
+              
+-With perspective projection
+                    -all lines appear to meet at some point in the view plane called Vannishing point
+                    -proctions map points from one space to another coordinate space of lower dimension, 
+                    and hence involve loss of information.
+                   -the can be one point, two point, and three point perspective
+                               one vanishing point only
+                               two for x-direction and y-direction 
+                               three for each of the three D axis
+                   -The center of projection(COP) :
+                   it is the location of the eye on which projection light rays converge.
+                   -Projectors are also called a projection vectors - these are rays that 
+                   start from the object scene and used to create an image of the object on viewing or view plane.
+-With parallel projection
+                -formed by extending parallel lines from each vertex on the object until the 
+                intersect the plane of the screen.
+                The point of intersection is the projection of vertex.
+                -makes an attempt to display picture in its true shape and size
+                -When prokector are perpendicular to view plane then is called orthographic projection.
+                -Used by the architects and engineers for creating working drawing of the object
+                
+model view projection
+-------------------------
+-In 3D engines, scenes are typically described as objects in three-demensional space.
+-With each object comprised of many three-dimesional vertices.
+-ultimately, these objects are rendered and displayed on a flat screen
+-Rendering a scene is always relative to the camera, and as such , the scene's vertice must also be defined relative to the camera's view.
+-When drawing a mesh in a graphic pipeline,  a vertex shadder will process every vertex, expecting 
+the vertex's position to be defined in clip space.
+-Models view projection is a common series of matrix transformations that can be applied to a vertex defined in model space
+-Transforming it into space, which can then be rasterized.
+-A vertex position is transformed by a model matrix, then view matrix, followed by a projection matrix, hence the name model view projection (MVP)
+-This illustrate an important case of multiple matrix multiplication application.
+
+Model space
+---------------
+-models, geometry and meshes are some series of vertices defined in model space.
+-Model matrix transforms vertices from model space to world space.
+-2x2x2 cube centered at (0,0,0)(0,0,0)(0,0,0)can be resized twisted and placed anywhere when  compined with a model matrix.
+-A model matrix M is composed from an object's translation transform T, rotation transform R , and scale transform S.
+-Multipying a vertex position v by this model matrix transforms the vector into world space
+   M=T.R.S
+   Vworld=Mvmodel
+   
+ -View space
+ -------------
+ -World space is the shared global 3D cartesian coordinate system.
+ -world space consist of all renderable objects, ligth, and cameras
+ all defined by the model matrix, and they are all relative to the same(0,0,0)(0,0,0)(0,0,0) points
+ -It fundamental to understand that all renders are from some camera's perspective
+ -All vertices must be defined relatively to the camera.
+ -Camera space is the coordinate system defined as the camera (0,0,0)(0,0,0)(0,0,0) facing down its-axis.
+ -The camera also has a model matrix defining  its position in world space.
+ -The inverse of the camera model matrix is the  matrix and its transformation vertices from the world space to camera space, or view space.
+ -in most cases the view matrix and model matrix are pre-multiplied and stored as a model-view matrix.
+ -while each object has its own model matrix, practically it means tha the view matrix is shared byall objects on the scene(as they all render from the same camera)
+ 
+ 
+ 
+Rasterizaion stage
+--------------------
+screen mapping
+--------------
+-Mapping the coordinate to the viewport dimension .i.e we have to convert all the geometric coordinate into pixel coordinate
+reffered to as rasterization.
+
+Rasterization stage
+---------------------
+Geometry stage -> rasterization and sampling 
+                      |
+                  texture mapping
+                      |
+                  image composition
+                      |
+                   intensity and color Quantization
+                     |
+                    framebuffer/display -> computer
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+           
+           Curves and surfaces 
+           -------------------------
+           types of curves
+           -----------------
+           -Curves play an important role in graphics
+           -it id an infinitely large set of points.
+           -Each point has two neighbores except endpoint.
+           -Broadly classified into :
+                       implicit 
+                       parametric curves
+                       
+           Introduction to parametrics equations 
+           ---------------------------------------
+           --A representation of a curve through equations which express the coordinate of the points
+            of the curve as functions of a variable, called a parameter.
+            -Dealing with curves becomes necessary to express the equation  representing such a curve using the 
+            parametrics equations
+            -Defines both y and x in terms of a third variables called parameter as:f(t)y=G(t) 
+            - t is third parameter.
+            -Each value of t defines a point (x, y) = (f(t), g(t)) that we can plot.
+            -the collection of points that we get by letting t be all possible value is the graph of the
+            parametric equation and is called the parametric curve.
+   
+   
+   
+   polynimial curves and surfaces 
+   ----------------------------------
+   -parenthetic curve equation and its curve 
+     x=t"2+t
+     y=2t-1
+     
+     Surfaces:Basic concepts
+     ------------------------
+     polynomial functions
+     -------------------------
+     -A polynomial in the variable x is a function that can be written in the form
+       f(x)=a,nx"n+a,n-1 ....+ a,2x'2+a1x+a0
+     -examples include:
+                   p1(x) = 4x+3
+                   p2(x) = 3X'3-2X+11
+                   
+     Elliptic torus
+     ----------------
+     -A surface of resolution which is generalization of the ring torus.
+     -procused by rotating an ellipse having horizontal semi-axis a, vertical semi-axis b, embedded in the 
+     xz-plane, z-axis .
+     -Given by the parametric equation
+             x(u,v) = (c+acos v) cosu
+             y(u,v) = (c+ acos v) sin u
+             z(u, v) = b sin v
+             u,vE[0,2 Pi]
+             
+   
+   
+ 
 Lesson six 
 -----------
 ->GRAPICS USING HTML CANVAS
