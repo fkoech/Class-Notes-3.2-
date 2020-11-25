@@ -10,7 +10,6 @@ f computation-based devices.
 ->One major concern of a system failure os the narrow optimization of
 a design that does not fully cater for contextual/appropriate factors.
 ->Human(users) and their context circumstance are major component of the problem space that cannot be ignored
-that can not be ignored.
 ->The greatest percentage of a program code in any interactive systems concentrates with user interaction.
 ->Failure to focus on users and their tasks context not only leads to
 poor user interfaces but also puts the entire system to risk
@@ -242,18 +241,31 @@ Chapter 2
              .Cognitive phycology and its importance during system deveopment
              .Different cognitive aspects and how  they can be encouraged during design
              .How color guideline can help to design appealing interfaces.
-             .
+             .optical illusion, context in system development.
+             
+             
                Introductions
                ----------------
 ->interacting with technology is cognitive-need to consider cognitive processes involved and cognitive limitations of user.
 ->cognitive phycology - a branch of psychology that studies mental processes 
                       - how people thinks, perceive , remember and learn.
-                      -focus  on he way humans process infromation(how we treat information
-                        that  comes in to the
-
-
-
-
+                      -focus  on the way humans process infromation(how we treat information
+                        that  comes in to the person stimuli and how this treatment leads to response.
+                       -Its more intersted in the variablea that intercede stimulus and response.
+                        
+->there a number of benefit associated with cognitive phycology as far as HCI is concerned.
+ 
+ 
+ Benefits of cognitive  phycology
+ -----------------------------
+ 1. Determine what the users are likely to find easy and how we  the designer can help them by encouraging these things.
+ 2.Designers can determine how end users perceive the world around them, how they(users) store these info as process
+ 3.identify $ explain the nature  and cause of problems user encounter.
+ 4.Understand different type of users and  why certain designs are successful while others fail
+  it lack the benefits  provided by the object-oriented approach.
+  
+->When programmer combine the thousands  of global functions and data types 
+  defined by the 
 
 
 
