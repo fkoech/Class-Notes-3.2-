@@ -524,6 +524,32 @@ display and reset the canvas drawing dimension
  canvas.height=300;
 
 
+
+
+BASIC TRANSFORMATIONS
+----------------------
+->SVG element can be transformed by:
+                            scaling
+                            translating
+                            screwing
+                            rotating
+->SVG uses the transformation attributes thaat defines a list of transformation definitiona that are applied to an element and the element's children.
+-> the element in the transmformed list are separated by whitespace and / or commas.
+and applied from right to left.
+
+Translation: the translate() methods
+-------------------------------------
+->A translation moves all the points of an element in the same direction and by the same amount.
+
+
+
+
+
+
+
+
+
+
 CAT 1 Revision Questions
 ---------------------------
 Computer graphics is Ubiquitous. What what do you understand by his statement?
