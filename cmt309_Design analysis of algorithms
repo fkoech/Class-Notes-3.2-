@@ -83,15 +83,18 @@ TOPICS
                 - finite sequence of well-defined, computer implimentatable instructions, typecally  to solve a class of problems or to perform computations.
                 - Are always unambiguous.
                 - Used as specifications for performing calculations, data processing, automated reasoning.
-                - As an effective method , it can be expressed within a finite amount of space and time and in a well-defined formal language for calculating  a function.
+                - As an effective method , it can be expressed within a finite amount of space and time and in a
+                   well-defined formal language for calculating  a function.
                 -sequence of well defined computer  implementable instructions.
                 -solves  a class of problems or to perform computations.
                 -well-defined computational procedure that takes some values as input and produces some values as output.
                 -not dependent not a particular programming language, machine, system or compiler.
-                -They are mathematical entities, which can be though of as running on some sort of idealized computer with an ifinite randoem access memory and unlimited word size.
+                -They are mathematical entities, which can be though of as running on some sort
+                  of idealized computer with an ifinite randoem access memory and unlimited word size.
                 -algorithm design is all about the mathematical theory behind the design of good programs.
                 -Are mathematical objects.
-   algorithm's efficiency - is a function of the amount of computational resource it rquires, measured typically as execution time and the amount of space, or memory, that the algorithm uses.
+   algorithm's efficiency - is a function of the amount of computational resource it rquires, measured typically as 
+   execution time and the amount of space, or memory, that the algorithm uses.
    three thinks you require to present an algorithm -
                      - present a clear, simple and unambiquos description of the algorithm.
                      -present a justification or proof of the algorithm's correctness.
@@ -103,7 +106,8 @@ algorithm analysis - the basic element includes:
                                               -recurrences.
              asymptotics 
                 -involves O-notation(big-oh) and its many relatives Ω, Θ, o (“little-Oh”), ω
-                -provides us with a way to simpliffy the functions that arise in analyzing  algorithm running  times by ignoring constant factors and concentrating on the trends for  large values of n.
+                -provides us with a way to simpliffy the functions that arise in analyzing  
+                algorithm running  times by ignoring constant factors and concentrating on the trends for  large values of n.
                 - ignore constant factors - multiplicative constants are ignored for example, 347n is Θ(n).
                 -constant factors appearing exponents cannot be ignored for example, 23n is not O(2n).
   programs - collection of instructions that can be executed by the computer to perform specific task.
@@ -111,7 +115,7 @@ algorithm analysis - the basic element includes:
            - may be executed with the aid of an interpreter.
            -collection of computer programs, libraries and related data are referred to as software.
 Why study algorithm - programming is a complex task. 
-                    - programming projects involves storing and accessing larg quantities of data efficiently.
+                    - programming projects involves storing and accessing large quantities of data efficiently.
                     - many programming projects involves solving compex computational problems for  which simplistic or naive solutions may not be efficient enough.
                     -the complexity may involves numerical data where the topic of algorithms and analysis is important.
                     
@@ -134,6 +138,25 @@ Select one:
 
 https://www.sanfoundry.com/fractional-knapsack-problem-multiple-choice-questions-answers-mcqs/
 
+Huffman coding 
+-------------------
+-prefix codes
+-coddes(bit sequences) are assigned such a way that the code assigned to one character is not the prefix.
+ to any other character.
+ -Ensure that the is no ambiguity when decoding the generated bitstream.
+ -The two major  parts in huffman coding 
+               Building a huffman tree from inout characters
+               Traverse the huffman tree and assign codes to characters.
+               
+               Steps for build Huffman tree
+               ------------------------------
+-Input iss an array of unique characters along with their frequency of occurrence and output is 
+huffman tree.
+-Create a leaf node for each unique character and build a min heap of all leaf nodes
+(min heap is used as priority queue)
+-Extract two nodes with the minimum frequence from the min heap
+-Create a new internal node with a fequency equal to the sum of the two nodes frequencies
+-Repeat step # 2 and # 3 until the heap contains only one node. the remaining node is the root node and the tree is complete.
 
 
 Chapter 4
