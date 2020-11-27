@@ -1231,8 +1231,25 @@ Panel
 
 
 
-
-
+ASP.NET WEB pages 
+------------------------
+dispaying data from the databases
+--------------------------------------
+-Database.Execute(SQLstatement[,parameters]) - excutes SQLstatement (with optional parameters)
+ such as INSERT, DELETE, or UPDATE and return a count of affected records.
+ -Database.GetLastInsertId() - returns the identtity column from the most recntly inserted row
+ -Database.Open(filename)/Database.Open(connectionStringName) - opens either the specified
+ database file  or the database specified using a named connection string from the web.config file.
+ -Database.OpenConnectionString(connectionString) - opens a database using  the connection string.
+                                                  -this contrasts with Database .open, hich uses a connection string name.
+-Database.Query(SQLstatement[,parameters]) - Queries the database using SQLstatement
+                                           - optionally passing parameters) and 
+                                            returns the results  as a collections.
+-Database.QuerySingle(SQLstatement[,parameter]) - executes SQLstatement(with optional parameters)
+                                                and return a single record.
+-Database.QueryValue(SQLstatement[,paramaters]) - executes SQLstatement(with optional parameters and returns 
+                                                -returns a single value.
+                                                
 
 
 
