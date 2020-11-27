@@ -361,8 +361,23 @@ Model space
  -in most cases the view matrix and model matrix are pre-multiplied and stored as a model-view matrix.
  -while each object has its own model matrix, practically it means tha the view matrix is shared byall objects on the scene(as they all render from the same camera)
  
- 
- 
+ Rasterization stage
+ ---------------------
+ -Task of  takinf an image described in a vector graphic format(shapes) and converting  it into  
+ a raster image(a series of pixels, dots or lines which when displayed together, 
+  create the image which was represented via shapes)
+  
+  -Basically in rasterization
+                -Converts the vertex information output by the geometry pipeline 
+                into pixel information needed by the video display.
+                -Vector data are composed of vertices and path
+                -ie the three tyepes of vectores 
+                            points 
+                            polyline 
+                            polygon
+               -Vector point - simple coordinate in the space
+               Polylines - connect XY coordinates called vertices with paths.
+               
 Rasterizaion stage
 --------------------
 screen mapping
@@ -384,8 +399,35 @@ Geometry stage -> rasterization and sampling
  
  
  
+ Continuation of graphic pipeline
+ --------------------------------------------
+ -Input from the world databases
+ -collision detection
+ -morphing
+ -Use of curves ad polygon vertices(implicit curves and parametric curves)
  
  
+ Geometry stage -
+              -Model $ view transformation
+                -in computer graphics the camera position is fixed  but the objrct is
+                 transformed relative to camera position.
+                -model-view matrix=model matrix+view matrix
+                -Lighting (shading) using shader
+                -projection(perspective, paralllel, orthographic and frustum)
+                -clippong
+                
+                
+                Homogeneous coordinate system
+                ------------------------------
+         -needed in order to represent a 2D coordintate point into an equivalent 3D point.
+         x   x
+         y-->y
+             1
+         -Meaning adding a 3rd  w coordinate point to every 2 d point such that
+         -A poiny can therefore have several homegeneous points.
+         -Useful in carrying out transformations
+         -Every 2D matric of transformation can be written in 3D
+         
  
  
  
