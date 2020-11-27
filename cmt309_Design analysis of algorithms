@@ -67,7 +67,43 @@ TOPICS
    .preorder  tree  walks
    .postorder tree walks
    
-   
+Algorithms
+------------------
+-Sequence of steps to solve a probems.
+-steps of  operations to solve a problem performing 
+-efficient method that can be expressed within finite amount of time and space.
+-Represent the solution of a particular problem in a very simple and efficient way.
+independent from any programming language.
+
+
+Algorith design
+-------------------
+-Its important aspects includes:
+     creating an efficient algorithms to solve a problem in an efficient way using 
+     minimum time and space.
+-for an algorithm to run in lesser time, we have to inverst in more memory .
+-For the case of less memory, we need to have more time.
+
+Steps involved in solvling computational problem
+-------------------------------------------------
+-problem definition
+-development of a model
+-specification of an algorithm
+-designing an algorithm
+-checking the correctness of an algorithm
+-analysis of an algorithm
+-implementation of an algorithmprogram testing
+-documentation
+
+
+
+-Design and analysis of algorithms
+-----------------------------------
+-very improtant for designing algorithm
+-solve different types of problems in the branch of computer science and information 
+technology.
+-
+
    
    Purpose
    ---------
@@ -140,6 +176,10 @@ https://www.sanfoundry.com/fractional-knapsack-problem-multiple-choice-questions
 
 Huffman coding 
 -------------------
+-Can efficiently encode data.
+-widely used and banaficial tchnique for compressing data.
+-Huffmans' greed algorithms used a table of the frquenciec of occurrence  of each character to build up an 
+optimal wat
 -prefix codes
 -coddes(bit sequences) are assigned such a way that the code assigned to one character is not the prefix.
  to any other character.
@@ -158,6 +198,51 @@ huffman tree.
 -Create a new internal node with a fequency equal to the sum of the two nodes frequencies
 -Repeat step # 2 and # 3 until the heap contains only one node. the remaining node is the root node and the tree is complete.
 
+
+Huffman Decoding
+--------------------
+-Used to decode the encoded data .
+-We iterate through the binary encoding data.
+-steps used to find character corresponding to current bits
+         -We start from root and do following unit a leaf is found.
+         -If current bit is 0, we move to the left node of the tree.
+         -If the bit is 1 we move to right node of the tree
+         -If during traversal, we encounter a leaf node, print character of that 
+         particular leaf node and then again continue the iteration of the encode data 
+         starting from step1
+        
+        
+        Kruskal's algorithm
+        --------------------
+        -Algorithm in graph theory that finds a minimum spanning tree
+         for a connected  weighted graph.
+        -finds a subset of the edges that forms a tree that includes every vertex,
+        -Total weight of all the edges in the tree is minimized.
+        -If the graph is not connected, then it finds a minimum spanning forest
+        (minimum spanning tree  for each connected component)
+        -It is an example of greedy algorithm.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 Chapter 4
 -----------
