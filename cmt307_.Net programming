@@ -528,7 +528,7 @@ Type Casting
    ->next click the create  button to which directs you to the next window.
    ->Ensure click empty and check and check  configure for HTTPS in case you are creating a secure application.
    ->click 'create' button to create your application.
-   n/b this may  take some few minutes, be patient as the proect is being created
+   n/b this may  take some few minutes, be patient as the project is being created
    
    
   
@@ -542,7 +542,7 @@ Type Casting
   ->The EDIT MENU also outine and comment/uncomment source code.
   ->THE VIEW MENU  allow you to switch between the source code and ASP>NET designer edit windows,
   ->THE VIEW MENU brings up dock-able windows that have been closed.
-  ->THE PROJECT MENU allows you to add  new components and files to the project, such as a new ASP>NET form, databases, controls
+  ->THE PROJECT MENU allows you to add  new components and files to the project, such as a new ASP.NET form, databases, controls
   ->THE BUILDMENU includes the commands needed to complile, build and execute the program on a web browser program.
   ->THE DEBUG MENU is used when stepping through a program that has been stopped with a breakpoint or error  condition.
   ->DATE is used when connecting an ADO.NET  dataset .
@@ -655,7 +655,7 @@ Type Casting
        -------------------
        ->Masterpage is the overall template for the web site it would not be a good idea to ollow people to change its layout  whenever the masterpage is inherited by another page.
        ->To allow each page to have its own content the <asp:ContentPlaceHolder> is used, and at least one must be included in the master page to allow other pages fo display their  own specific information.
-       ->Any information placed within the <asp: ContentPlaceHolder> in the master page is not inherited by other pages and as such should be lft blank.
+       ->Any information placed within the <asp: ContentPlaceHolder> in the master page is not inherited by other pages and as such should be left blank.
        ->Master page
                 -cannot be viewed directly 
                 -it need to be inherited by another page.
@@ -669,7 +669,7 @@ Type Casting
                 -Remove the one in the head section of  the HTML  with the ID "head", all that should be in the head is the <title> tag.
                 -once the master page has been created the default page for the site needs to be added.
                 -Right click and add a new item, select the web  form.
-                -make sure the place code in separate  file and select master page is seleected.
+                -make sure the place code in separate  file and select master page is selected.
                 -click add, and then select the master page masterPage.master.
                 -Add one more item to the web site, add a stylsheet with the name stylesheet.css
                 -with thr masterPage in the Design view drag the stylesheet from the solution Explorer to the masterPage.
