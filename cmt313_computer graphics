@@ -1,5 +1,9 @@
 INTRODUCTION
 -------------
+-Art of drawing pictures on computer screens with the help of programming.
+-Involves computations, creation, and manipulations of data.
+-rendering tools for the generation and manilulation of imaes.
+-Cathod ray tube- prmary output device in a graphical system i
 ->programming language that can be included on out  pages to make them 
 more interactive 
 ->used to modify the content  of forms, change images, open new windows and write dynamic page content.
@@ -564,6 +568,9 @@ display and reset the canvas drawing dimension
  //increasing the width and height
  canvas.width=200;
  canvas.height=300;
+ </script>
+ </body>
+ </html>
 
 
 
@@ -1019,7 +1026,7 @@ with  the start circle and moves towards the end circle.
       --------------------
 ->pattern - used to fill  or stroke  an object using a pre-defined graphic object
             which can be replaced (tiled) at fixed intervals in x and y to cover the area to be painted.
-          -consist of an image source - JPG, GIF, SVG, or the currently playing frame of a vedeo.
+          -consist of an image source - JPG, GIF, SVG, or the currently playing frame of a video.
           -Created by 
                   createPattern() method, 
                   passing in the image object and a repeat parameters.
@@ -1045,7 +1052,7 @@ with  the start circle and moves towards the end circle.
                   
                  
                   
-                  Loding two images-pattern making them nto patterns tha are used to stroke a line and fill a rectangle
+                  Loding two images-pattern making them into patterns tha are used to stroke a line and fill a rectangle
                   ------------------------------------------------------------------------------------------------------
                   
                                  <canvas id="mycanvas" width="500" hheight="500"></canvas>
@@ -1105,7 +1112,22 @@ with  the start circle and moves towards the end circle.
        var canvas=document.getElementBy
                                  
                                  
-                                 
+     
+     
+     Chapter
+     =========
+     Scalable vector graphics
+     ------------------------
+     SVG marker element
+     --------------
+     -marks the start, mid and end of a line or path.
+     -created using <marker> element
+     -<marker> element can be nested inside a <defs> element.
+     -<defs> elements normally holds a set of reusable definitions 
+      for the SVG image.
+      
+     
+     
                                  
                   
                
