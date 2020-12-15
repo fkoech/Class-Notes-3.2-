@@ -519,6 +519,372 @@ Agile process
  -Requirements are planned in advance but an iterative and agile approach can be taken to design and implementation.
  
   
+   Attributes of a good software
+   ------------------------------------
+   -maintainable
+   -dependable 
+   -usable
+   
+   Software products
+   ----------------------
+   -Generic products 
+   -Customiized products
+   
+   
+   
+   Frequently asked questions about software engineering 
+   ----------------------------------------------------------
+   -What is software
+              -computer program and associate documentation.
+              -software may be developed for particular custromer or may be developed for a general market
+              
+              
+   -Attributes for a good software 
+                -Should develiver functionality and performance to the user 
+                -should be maintainable
+                -dependable
+                -usable
+  -What is software engineering
+                 -Engineering descipline that is  concerned with all aspects of software products.
+                 
+  -What are the fundamental software engineering activities
+                 -software specification
+                 -software development
+                 -software validatation
+                 -software evalution
+                 
+  -What is the difference between software engineering and computer science 
+                 -computer science focus on theories and fundamentals
+                 -Software engineering is concerned with the practicalities of developing and
+                 delivering useful software
+ -what is the difference between software  engineering and system engineering 
+                -system engineering is concern with  all aspects  of computer based system 
+                developement including hardware, software and process engineering.
+                -software engineering is part of this more general process.
+
+software engineering  -   
+                      -engineering discipline 
+                      -concerned with all aspect of software production
+                      - ie  from the early stages  of system specification through  to mainaining the system after it has gone to use.
+                      
+-Engineering discipline - using appropriate theories and methods  to solve problems
+                          bearing in mind  organisational  and financial contraints.
+                          
+                          
+                          
+                          General issues that affects most software
+                          ------------------------------------------
+      -Heterogeneity
+      -Business and social changes
+      -Security and trust
+      
+      
+      
+      
+      
+      
+      Application types
+      -----------------------------
+      -Batch processsing systems
+      -Entertainment system
+      -system for modeling and simulation
+      -stand alone applications
+      -Interactive transaction-base applications
+      -Embedded control systems
+      -Data connection systems
+      -System of systems
+      
+      
+      Software engineering and the web 
+      -------------------------------------
+      -Web - platform for running applications
+      -Web service allows applications functionalities to be acccessed over  the web
+      -cloud computing is an approach to the provision of computer servces where applications run 
+       remotely on the cloud
+       -web-based systems - are complex distributed systems 
+       
+       
+       
+       Key points
+       ------------------
+       -Software engineering - is an engineering discipline that is concerned with all aspects 
+        of software production.
+       -essentially software products attributes  are maintainability, dependability and security,
+       efficiency and acceptability.
+       -The high-level activities of specification, development, validation and evolution are part of all software processes.
+       
+       -The fundamental notion of software engineering are universally applicable to all types of system development.
+       -different types of systems requires appropriate software engineering tools and techniques for the
+       development .
+       
+       software engineering ethics
+       -------------------------------
+       -responsibilities
+       -honest
+       -confidentiality
+       -competence
+       
+       
+       issues of professional responsibility 
+       -------------------------------------------
+       -Intellectual property right
+       -Computer misuse.
+       
+         
+        The software processs
+       -------------------------
+       -Set of activities required to develop a software sysytems
+       -software process - 
+                           specification
+                           design and implementation
+                           validation
+                           Evalution
+                           
+                The waterfall model
+                ---------------------
+       Waterfall model phases
+       --------------------------   
+  -Requirements definition
+  -System and software design
+  -implementation and unit testing 
+  -integration and system testing 
+  -operation and maintenance.
+  
+  
+  Drawbacks 
+  ------------
+  -Difficult in accodating changes  after the process is underway
+  -in preciple, a phase has to be complete before moving onto the next.
+  
+  incremental benefits
+  ------------------------------
+  -Reduces cost of accommodating changing customer requirement.
+  -Ease to get customer feedback.
+  -more rapid devivery  and deployment of useful softare to the customer 
+  
+  
+  incremental development problems
+  -------------------------------------
+  -the process is invisible
+  -system stuctures tends  to degrade as new increments are added.
+  
+  
+  reuse-oriented software engineering
+  ---------------------------------------
+  -process stages 
+              -Component analysis
+              -Requirement modifications
+              -System design with reuse
+              -Development and intergration.
+              
+              Reuse-oriented software engineering 
+              -----------------------------------------
+   -Requirement specification
+   -component analysis
+   -requirement modification
+   -System design with reuse
+   -Development and integration
+   -system validation
+   
+   Process activities
+   ----------------------
+   -Real software processes are inter-leaved sequence of technical, collaborative and managerial activities.
+   -with overal goal of specifying, designing, implementing, and testing a software system.
+   
+   
+   
+   
+   software specifications
+   -------------------------
+   -The process of establishing what service are required and the constaints on the systems and development.
+   
+   Requirement engineering process
+   ----------------------------------
+   -Feasibility study.
+   -Requirements elicitation and analysis.
+   -Requirement specification
+   -Requirement validation.
+   
+   
+   the requirements engineering process
+   -------------------------------------------
+   -Feasibility study
+   -Requirement elicity and analysis
+   -requirment specifications
+   -Requirment validation
+   -Requirment documentation
+   -users and system requirement.
+   -System model
+   -Feasibility report
+   
+   
+   
+   Software design and implementation
+ -----------------------------------------
+ -Process of converting the system specification into an executable system
+ -software design - designing a software structure that realises the specification.
+ -implementation - translate this structure into an executable program 
+ 
+ 
+ The general model of the design  process
+ --------------------------------------------
+ -Design input
+ -Design activities
+ -Design output
+ 
+ Design input
+ -----------------
+ -Platform information 
+ -Requirement specification 
+ -Data description
+ 
+ 
+ Design activitiess
+------------------
+-Architectural design 
+-interface design 
+-component design 
+-Database design
+
+Design outputs
+---------------------
+-System architecture
+-database specifications
+-interface specification 
+-component specification
 
 
+Architectural design 
+--------------------
+-identifity the overal structure of the system.
+-identifty the principal components, their relationships and how they are distributed.
+
+interface design 
+--------------------
+-You define the interface between system componnents
+  
+  
+component design 
+-----------------
+-Take each system component and design how it will operate.
+
+
+Database design 
+---------------
+-design the system data  stucture and how these are to be reprented in a database.
+
+
+
+
+Stages of testing 
+---------------------
+-component testing
+-system testing
+-acception testing
+
+
+
+software evolution
+-----------------------
+-software is inherently flexible and can change.
+
+
+General models
+--------------------
+-Describe the organisation of software processes.
+they includes;
+              -Waterfall model 
+              -incremental developement
+              -Reuse oriented developement.
+              
+              
+              software prototyping 
+         --------------------------------
+ -Prototyping - initial version of a system used to demonstrate concepts and trying out design option.
+ -used in 
+          Requirement engineering process to help with requrements elicitation.
+          in design process to expore option and develop a ui design 
+          in testing process to test back to back tests.
+          
+
+
+importance of prototypes
+ --------------------------------
+ -improve system usability
+ -A closer match to user's need
+ -improve design quality
+ -improved maintainability
+ -Reduced development effort
+ 
+ The process of protype development
+ ---------------------------------------
+ -Establish prototype  objectives -> prototyping plan
+ -Define prototype functionalities ->  outline definition
+ -Develop prototype -> Execute prototype
+ -Evaluate protype -> Evaluate report
+ 
+ Throw-away prototype
+ ----------------------------
+ -It may be imposible to tune the system to meet non-functional requirment
+ -Protype are normally undocumented
+ -The prototype structure is usually degraded through rapid change.
+ -The prototype probability will not meet normal organisational  quality standards.
+ 
+ -
+
+
+Rational unified process
+---------------------------
+-A model generic process 
+-Organised into phases:
+                       inception
+                       elaboration
+                       construction
+                       transition
                        
+                       
+                       
+                       Agile methods
+                       --------------------
+  -Focus on the code rather than the design
+  -Are based on an iterative approach to software developement
+  -Are intended  to deliver working software quickly and evolve this quick to meet changing requirement.
+  -it aims at reducing overheads in the software process(ie limiting documentation) and to
+  be able to respond quickly to changing requirement without excepssive rework.
+  
+  Agile manifesto values
+  ---------------------
+  -Individuals and interactions over processes and tools
+  -Working software over comprehensive documentation
+  -customer collaboration over contract negotiation
+  -Responding to change over  following a plan 
+  
+  principles of  agile methods
+  ----------------------------
+  -Customer involvement
+  -Incremental delivery
+  -people not process
+  -Embrace change
+  -Maintain simplicity
+  
+
+
+Extreme programming practices 
+-------------------------------------
+-Incremental planning
+-Small relseases
+-Simple design
+-Test-fist development
+-Refactoring
+-pair programming
+-colllective ownership
+continuous intergrating 
+-sustainable pace
+-On-sete customer
+
+
+
+
+
+
+
