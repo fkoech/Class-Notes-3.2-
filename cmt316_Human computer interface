@@ -269,7 +269,25 @@ Chapter 2
 
 
 
+User Requirement
+--------------------------------
+-Requirement set by the user.
+-Expresses how a facility, equipment or process should perform in terms of the products to be manufactured, required throughput, 
+and condition through which products should be made.
+-Provides information that serves as the basis for further specification, design and verification of a manufacturing system.
+-The common qz is how much details should be in the user requirement.
+-Some categories it into : process user requirement which relates to product requirment.
+-General user requirment, is related to critical to personnel safety.
 
+Process user Requirement
+----------------------------
+-Critical process parameter the system must support
+-critical quality attributes or product  release criteria that system must impart or preserve.
+-Process/ product specific regulatory requirements
+-
+General user Requirement
+------------------------------
+-
 
 
 
